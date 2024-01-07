@@ -41,26 +41,71 @@ def remove_percentage(image, percentage, position):
 
 def handle_layer_addition(base_image, data, separation_width, main, second):
     percentage = (1 / (data['spriteData']['base']['multiplier'] + 1)) * 100
+    used_layer_names = set()
 
     for layer_config in data['spriteData']['layers']:
+        layer_name = layer_config['name']
         layer_path = layer_config['path']
+        main_sprite_override, second_sprite_override = None, None
+
+        if 'sprite' in main:
+            main_sprite_override = main['sprite'].get(layer_name)
+        if 'sprite' in second:
+            second_sprite_override = second['sprite'].get(layer_name)
+
+        if main_sprite_override or second_sprite_override:
+            # Use the sprite-specific override if available
+            layer_path = main_sprite_override or second_sprite_override or layer_path
+            used_layer_names.add(layer_name)
+
         positions = layer_config.get('positions', [])
-        positions_start = layer_config.get('positionsStart', 0)
+        positions_start = layer_config.get('positionsStart', None)
 
         for i in positions:
             layer_image = Image.open(layer_path)
             position = (get_position_x(i-1, separation_width), 0)
             add_layer(base_image, layer_image, position)
 
-        for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
-            layer_image = Image.open(layer_path)
-            if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
-                layer_image = remove_percentage(layer_image, percentage, i - 4)
-            position = (get_position_x(i-1, separation_width), 0)
-            add_layer(base_image, layer_image, position)
+        if positions_start:
+            for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
+                layer_image = Image.open(layer_path)
+                if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
+                    layer_image = remove_percentage(layer_image, percentage, i - 4)
+                position = (get_position_x(i-1, separation_width), 0)
+                add_layer(base_image, layer_image, position)
+
+    
+    if 'sprite' in main:
+        for key in main['sprite'].keys():
+            if key in used_layer_names:
+                continue
+
+            main_path = main['sprite'][key]
+            for i in range(data['spriteData']['base']['multiplier'] + 1):
+                layer_image = Image.open(main_path)
+                position = (get_position_x(i, separation_width), 0)
+                add_layer(base_image, layer_image, position)
+    
+    
+    if 'sprite' in second:
+        for key in second['sprite'].keys():
+            if key in used_layer_names:
+                continue
+            
+            second_path = second['sprite'][key]
+            for i in range(data['spriteData']['base']['multiplier'] + 1):
+                layer_image = Image.open(second_path)
+                position = (get_position_x(i, separation_width), 0)
+                add_layer(base_image, layer_image, position)
+
+
 
 def acquire_modules_data(data):
-    modules_data = {'main': {}, 'second': {}}
+    modules_data = {'main': {"base":{
+        'name': 'BASE'},
+    }, 'second': {"base":{
+        'name': 'BASE'},
+    }}
 
     for module, module_data in data['modules'].items():
         if module_data['main']:
@@ -91,7 +136,7 @@ def main():
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
 
             result_image = copy_image
-            result_image.show()
+            #result_image.show()
             result_image.save(f"output/img/sprite_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
 
 if __name__ == "__main__":

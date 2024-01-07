@@ -63,6 +63,9 @@
             "bio": true,
             "stats":{
                 "persDamage": "6"
+            },
+            "sprite":{
+                "glow": "generation/layers/glowBio.png"
             }
         },
 
@@ -120,6 +123,9 @@
                 "weaponArt": "focus_2",
                 "power": "3",
                 "damage": "4"
+            },
+            "sprite":{
+                "add": "generation/layers/power.png"
             }
         }
     }
