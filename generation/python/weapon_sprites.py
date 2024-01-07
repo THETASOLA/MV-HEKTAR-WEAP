@@ -58,6 +58,29 @@ def handle_layer_addition(base_image, data, separation_width, main, second):
             layer_path = main_sprite_override or second_sprite_override or layer_path
             used_layer_names.add(layer_name)
 
+        if 'sprite' in main:
+            for key in main['sprite'].keys():
+                if key in used_layer_names:
+                    continue
+
+                main_path = main['sprite'][key]
+                for i in range(data['spriteData']['base']['multiplier'] + 1):
+                    layer_image = Image.open(main_path)
+                    position = (get_position_x(i, separation_width), 0)
+                    add_layer(base_image, layer_image, position)
+        
+        
+        if 'sprite' in second:
+            for key in second['sprite'].keys():
+                if key in used_layer_names:
+                    continue
+                
+                second_path = second['sprite'][key]
+                for i in range(data['spriteData']['base']['multiplier'] + 1):
+                    layer_image = Image.open(second_path)
+                    position = (get_position_x(i, separation_width), 0)
+                    add_layer(base_image, layer_image, position)
+
         positions = layer_config.get('positions', [])
         positions_start = layer_config.get('positionsStart', None)
 
@@ -73,32 +96,6 @@ def handle_layer_addition(base_image, data, separation_width, main, second):
                     layer_image = remove_percentage(layer_image, percentage, i - 4)
                 position = (get_position_x(i-1, separation_width), 0)
                 add_layer(base_image, layer_image, position)
-
-    
-    if 'sprite' in main:
-        for key in main['sprite'].keys():
-            if key in used_layer_names:
-                continue
-
-            main_path = main['sprite'][key]
-            for i in range(data['spriteData']['base']['multiplier'] + 1):
-                layer_image = Image.open(main_path)
-                position = (get_position_x(i, separation_width), 0)
-                add_layer(base_image, layer_image, position)
-    
-    
-    if 'sprite' in second:
-        for key in second['sprite'].keys():
-            if key in used_layer_names:
-                continue
-            
-            second_path = second['sprite'][key]
-            for i in range(data['spriteData']['base']['multiplier'] + 1):
-                layer_image = Image.open(second_path)
-                position = (get_position_x(i, separation_width), 0)
-                add_layer(base_image, layer_image, position)
-
-
 
 def acquire_modules_data(data):
     modules_data = {'main': {"base":{

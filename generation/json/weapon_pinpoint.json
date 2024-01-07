@@ -52,6 +52,9 @@
             "modName": "Pierce Module",
             "stats":{
                 "sp": "1"
+            },
+            "sprite":{
+                "add": "generation/layers/pierce.png"
             }
         },
 
@@ -65,6 +68,7 @@
                 "persDamage": "6"
             },
             "sprite":{
+                "add": "generation/layers/bio.png",
                 "glow": "generation/layers/glowBio.png"
             }
         },
@@ -77,6 +81,9 @@
             "weaponBlueprint": false,
             "stats":{
                 "cooldown": "8"
+            },
+            "sprite":{
+                "add": "generation/layers/cooldown.png"
             }
         },
 
@@ -89,6 +96,7 @@
                 "stun": "25"
             },
             "sprite":{
+                "add": "generation/layers/stun.png",
                 "glow": "generation/layers/glowStun.png"
             }
         },
@@ -100,6 +108,9 @@
             "modName": "Fire Module",
             "stats":{
                 "fireChance": "5"
+            },
+            "sprite":{
+                "add": "generation/layers/fire.png"
             }
         },
         
@@ -111,6 +122,9 @@
             "stats":{
                 "hullBust": "1",
                 "breachChance": "2"
+            },
+            "sprite":{
+                "add": "generation/layers/hull.png"
             }
         },
 
