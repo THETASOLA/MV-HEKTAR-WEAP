@@ -82,7 +82,7 @@ def create_new_weapon(json_data):
 weapon_dictionary = {}
 
 def create_module_weapon(json_data, module_name):
-    module_data = json_data[module_name]
+    module_data = json_data["modules"][module_name]
     new_module_weapon = create_new_weapon(json_data)
     weapon_dictionary[module_data["name"]] = new_module_weapon
 

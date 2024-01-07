@@ -1,7 +1,7 @@
 from lxml import etree
 import json
-from generation.python.weapon_stats import *
-from generation.python.weapon_list_name import *
+from weapon_stats import *
+from weapon_list_name import *
 
 additional_data = ""
 
@@ -12,14 +12,14 @@ def generate_weapon(json_weapon_data):
     main_module_dictionary = {}
     data_written = ""
 
-    for module_name in json_weapon_data:
-        if module_name != "weaponBlueprint":
-            create_module_weapon(json_weapon_data, module_name)
-            module_data = json_weapon_data[module_name]
-            if module_data["main"]:
-                main_module_dictionary[module_name] = module_data
-            else:
-                module_dictionary[module_name] = module_data
+    for module_name in json_weapon_data["modules"]:
+
+        create_module_weapon(json_weapon_data, module_name)
+        module_data = json_weapon_data["modules"][module_name]
+        if module_data["main"]:
+            main_module_dictionary[module_name] = module_data
+        else:
+            module_dictionary[module_name] = module_data
 
     for _, main_module_data in main_module_dictionary.items():
         for _, module_data in module_dictionary.items():

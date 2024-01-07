@@ -11,7 +11,7 @@ Incompatible with the accuracy and lockdown module.</desc>
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -39,7 +39,7 @@ Status - Pierce
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -67,7 +67,7 @@ Status - Bio
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -125,7 +125,7 @@ Status - Cooldown
   <cooldown>8</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -153,7 +153,7 @@ Status - Stun
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -182,7 +182,7 @@ Attribute - Fire
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -210,7 +210,7 @@ Attribute - Hull
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -239,7 +239,7 @@ Attribute - Power
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>3</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -247,7 +247,7 @@ Attribute - Power
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>focus_2</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -268,7 +268,7 @@ Status - Pierce
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -297,7 +297,7 @@ Status - Bio
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -356,7 +356,7 @@ Status - Cooldown
   <cooldown>8</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -385,7 +385,7 @@ Status - Stun
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -415,7 +415,7 @@ Status - Pierce
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -445,7 +445,7 @@ Status - Bio
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -505,7 +505,7 @@ Status - Cooldown
   <cooldown>8</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -535,7 +535,7 @@ Status - Stun
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>1</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -566,7 +566,7 @@ Status - Pierce
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>3</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -574,7 +574,7 @@ Status - Pierce
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>focus_2</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -595,7 +595,7 @@ Status - Bio
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>3</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -603,7 +603,7 @@ Status - Bio
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>focus_2</weaponArt>
   <iconImage>beam</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
@@ -654,7 +654,7 @@ Status - Cooldown
   <cooldown>8</cooldown>
   <speed>1</speed>
   <power>3</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -662,7 +662,7 @@ Status - Cooldown
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>focus_2</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -683,7 +683,7 @@ Status - Stun
   <cooldown>10</cooldown>
   <speed>1</speed>
   <power>3</power>
-  <cost>45</cost>
+  <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
   <image>beam_contact</image>
@@ -691,7 +691,7 @@ Status - Stun
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>focus_2</weaponArt>
   <iconImage>beam</iconImage>
   <stun>25</stun>
 </weaponBlueprint>

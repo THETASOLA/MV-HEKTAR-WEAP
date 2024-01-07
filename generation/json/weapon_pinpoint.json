@@ -1,4 +1,24 @@
 {
+    "spriteData": {
+        "base": {
+            "path": "generation/layers/body.png",
+            "multiplier": 9
+        },
+        "layers": [
+            {
+                "name": "ready",
+                "path": "generation/layers/on.png",
+                "positions": [2]
+            },
+            {
+                "name": "glow",
+                "path": "generation/layers/glow.png",
+                "positionsStart": 2,
+                "remove_from": 4
+            }
+        ]
+    },
+
     "weaponBlueprint": {
         "@name": "MODULAR_PINPOINT",
         "type": "BEAM",
@@ -24,78 +44,83 @@
         "iconImage": "beam"
     },
 
-    "modulePierce": {
-        "name": "PIERCE",
-        "main": false,
-        "desc": "Status - Pierce",
-        "modName": "Pierce Module",
-        "stats":{
-            "sp": "1"
-        }
-    },
+    "modules": {
+        "modulePierce": {
+            "name": "PIERCE",
+            "main": false,
+            "desc": "Status - Pierce",
+            "modName": "Pierce Module",
+            "stats":{
+                "sp": "1"
+            }
+        },
 
-    "moduleBio": {
-        "name": "BIO",
-        "main": false,
-        "desc": "Status - Bio",
-        "modName": "Anti-Bio Module",
-        "bio": true,
-        "stats":{
-            "persDamage": "6"
-        }
-    },
+        "moduleBio": {
+            "name": "BIO",
+            "main": false,
+            "desc": "Status - Bio",
+            "modName": "Anti-Bio Module",
+            "bio": true,
+            "stats":{
+                "persDamage": "6"
+            }
+        },
 
-    "moduleCooldown": {
-        "name": "COOLDOWN",
-        "main": false,
-        "desc": "Status - Cooldown",
-        "modName": "Cooldown Module",
-        "weaponBlueprint": false,
-        "stats":{
-            "cooldown": "8"
-        }
-    },
+        "moduleCooldown": {
+            "name": "COOLDOWN",
+            "main": false,
+            "desc": "Status - Cooldown",
+            "modName": "Cooldown Module",
+            "weaponBlueprint": false,
+            "stats":{
+                "cooldown": "8"
+            }
+        },
 
-    "moduleStun": {
-        "name": "STUN",
-        "main": false,
-        "desc": "Status - Stun",
-        "modName": "Stun Module",
-        "stats":{
-            "stun": "25"
-        }
-    },
+        "moduleStun": {
+            "name": "STUN",
+            "main": false,
+            "desc": "Status - Stun",
+            "modName": "Stun Module",
+            "stats":{
+                "stun": "25"
+            },
+            "sprite":{
+                "glow": "generation/layers/glowStun.png"
+            }
+        },
 
-    "moduleFire": {
-        "name": "FIRE",
-        "main": true,
-        "desc": "Attribute - Fire",
-        "modName": "Fire Module",
-        "stats":{
-            "fireChance": "5"
-        }
-    },
-    
-    "moduleHull": {
-        "name": "HULL",
-        "main": true,
-        "desc": "Attribute - Hull",
-        "modName": "Hull Module",
-        "stats":{
-            "hullBust": "1",
-            "breachChance": "2"
-        }
-    },
+        "moduleFire": {
+            "name": "FIRE",
+            "main": true,
+            "desc": "Attribute - Fire",
+            "modName": "Fire Module",
+            "stats":{
+                "fireChance": "5"
+            }
+        },
+        
+        "moduleHull": {
+            "name": "HULL",
+            "main": true,
+            "desc": "Attribute - Hull",
+            "modName": "Hull Module",
+            "stats":{
+                "hullBust": "1",
+                "breachChance": "2"
+            }
+        },
 
-    "modulePower": {
-        "name": "POWER",
-        "main": true,
-        "desc": "Attribute - Power",
-        "modName": "Power Module",
-        "stats":{
-            "weaponArt": "focus_2",
-            "power": "3",
-            "damage": "4"
+        "modulePower": {
+            "name": "POWER",
+            "main": true,
+            "desc": "Attribute - Power",
+            "modName": "Power Module",
+            "stats":{
+                "weaponArt": "focus_2",
+                "power": "3",
+                "damage": "4"
+            }
         }
     }
 }
