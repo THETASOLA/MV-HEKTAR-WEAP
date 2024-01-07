@@ -1,0 +1,102 @@
+{
+    "weaponBlueprint": {
+        "@name": "MODULAR_DRONE_WEAPON_LASER",
+        "type": "LASER",
+        "title": "Drone Laser",
+        "damage": "1",
+        "shots": "1",
+        "accuracyMod": "0",
+        "persDamage": "0",
+        "hullBust": "0",
+        "lockdown": "0",
+        "stun": "0",
+        "sp": "0",
+        "fireChance": "0",
+        "breachChance": "0",
+        "rarity": "0",
+        "image": "laser_light",
+        "launchSounds": {
+            "sound": "laser_piece"
+        },
+        "hitShipSounds": {
+            "sound": ["hitHull2", "hitHull3"]
+        },
+        "hitShieldSounds": {
+            "sound": ["hitShield1", "hitShield2", "hitShield3"]
+        },
+        "missSounds": {
+            "sound": "miss"
+        },
+        "weaponArt": "laser_piece"
+    },
+
+    "modulePierce": {
+        "name": "PIERCE",
+        "main": false,
+        "stats":{
+            "sp": "1",
+            "breachChance": "3"
+        }
+    },
+
+    "moduleBio": {
+        "name": "BIO",
+        "main": false,
+        "bio": true,
+        "stats":{
+            "damage": "0",
+            "sysDamage": "1",
+            "persDamage": "4",
+            "sp": "1"
+        }
+    },
+    
+    "moduleLockdown": {
+        "name": "LOCKDOWN",
+        "main": false,
+        "stats":{
+            "lockdown": "1"
+        }
+    },
+
+    "moduleStun": {
+        "name": "STUN",
+        "main": false,
+        "stats":{
+            "stun": "12"
+        }
+    },
+
+    "moduleAccuracy": {
+        "name": "ACCURACY",
+        "main": true,
+        "stats":{
+            "accuracyMod": "20"
+        }
+    },
+
+    "moduleFire": {
+        "name": "FIRE",
+        "main": true,
+        "stats":{
+            "fireChance": "3"
+        }
+    },
+    
+    "moduleHull": {
+        "name": "HULL",
+        "main": true,
+        "stats":{
+            "hullBust": "1",
+            "breachChance": "2"
+        }
+    },
+
+    "modulePower": {
+        "name": "POWER",
+        "main": true,
+        "stats":{
+            "damage": "2"
+        }
+    }
+}

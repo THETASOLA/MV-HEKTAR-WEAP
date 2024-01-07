@@ -1,0 +1,101 @@
+{
+    "weaponBlueprint": {
+        "@name": "MODULAR_PINPOINT",
+        "type": "BEAM",
+        "title": "Modular Pinpoint",
+        "tip": "tip_focus",
+        "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Pinpoint. It supports 1 attribute module and 1 status module.\nIncompatible with the accuracy and lockdown module.",
+        "damage": "2",
+        "sp": "0",
+        "fireChance": "0",
+        "breachChance": "2",
+        "cooldown": "10",
+        "speed": "1",
+        "power": "1",
+        "cost": "65",
+        "bp": "2",
+        "rarity": "2",
+        "image": "beam_contact",
+        "length": "1",
+        "launchSounds": {
+            "sound": "focus_weak"
+        },
+        "weaponArt": "focus_1",
+        "iconImage": "beam"
+    },
+
+    "modulePierce": {
+        "name": "PIERCE",
+        "main": false,
+        "desc": "Status - Pierce",
+        "modName": "Pierce Module",
+        "stats":{
+            "sp": "1"
+        }
+    },
+
+    "moduleBio": {
+        "name": "BIO",
+        "main": false,
+        "desc": "Status - Bio",
+        "modName": "Anti-Bio Module",
+        "bio": true,
+        "stats":{
+            "persDamage": "6"
+        }
+    },
+
+    "moduleCooldown": {
+        "name": "COOLDOWN",
+        "main": false,
+        "desc": "Status - Cooldown",
+        "modName": "Cooldown Module",
+        "weaponBlueprint": false,
+        "stats":{
+            "cooldown": "8"
+        }
+    },
+
+    "moduleStun": {
+        "name": "STUN",
+        "main": false,
+        "desc": "Status - Stun",
+        "modName": "Stun Module",
+        "stats":{
+            "stun": "25"
+        }
+    },
+
+    "moduleFire": {
+        "name": "FIRE",
+        "main": true,
+        "desc": "Attribute - Fire",
+        "modName": "Fire Module",
+        "stats":{
+            "fireChance": "5"
+        }
+    },
+    
+    "moduleHull": {
+        "name": "HULL",
+        "main": true,
+        "desc": "Attribute - Hull",
+        "modName": "Hull Module",
+        "stats":{
+            "hullBust": "1",
+            "breachChance": "2"
+        }
+    },
+
+    "modulePower": {
+        "name": "POWER",
+        "main": true,
+        "desc": "Attribute - Power",
+        "modName": "Power Module",
+        "stats":{
+            "weaponArt": "focus_2",
+            "power": "3",
+            "damage": "4"
+        }
+    }
+}

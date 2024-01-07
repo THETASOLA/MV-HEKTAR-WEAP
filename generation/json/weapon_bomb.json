@@ -1,0 +1,79 @@
+{
+    "weaponBlueprint": {
+        "@name": "MODULAR_DRONE_WEAPON_BEAM",
+        "type": "BEAM",
+        "title": "Drone Beam",
+        "damage": "1",
+        "persDamage": "0",
+        "hullBust": "0",
+        "lockdown": "0",
+        "stun": "0",
+        "sp": "0",
+        "speed": "10",
+        "length": "50",
+        "fireChance": "0",
+        "breachChance": "0",
+        "rarity": "0",
+        "image": "beam_contact",
+        "launchSounds": {
+            "sound": ["beam1", "beam1_2"]
+        },
+        "weaponArt": "beam_fire"
+    },
+
+    "modulePierce": {
+        "name": "PIERCE",
+        "main": false,
+        "stats":{
+            "sp": "1",
+            "breachChance": "3"
+        }
+    },
+
+    "moduleBio": {
+        "name": "BIO",
+        "main": false,
+        "bio": true,
+        "stats":{
+            "persDamage": "6",
+            "damage": "0",
+            "sysDamage": "1",
+            "sp": "2"
+        }
+    },
+
+    "moduleStun": {
+        "name": "STUN",
+        "main": false,
+        "stats":{
+            "stun": "18"
+        }
+    },
+
+    "moduleFire": {
+        "name": "FIRE",
+        "main": true,
+        "stats":{
+            "fireChance": "4"
+        }
+    },
+    
+    "moduleHull": {
+        "name": "HULL",
+        "main": true,
+        "stats":{
+            "hullBust": "1",
+            "breachChance": "1"
+        }
+    },
+
+    "modulePower": {
+        "name": "POWER",
+        "main": true,
+        "stats":{
+            "speed": "20",
+            "length": "110",
+            "breachChance": "3"
+        }
+    }
+}
