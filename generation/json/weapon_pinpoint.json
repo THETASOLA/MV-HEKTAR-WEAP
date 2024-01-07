@@ -54,7 +54,8 @@
                 "sp": "1"
             },
             "sprite":{
-                "add": "generation/layers/pierce.png"
+                "add": "generation/layers/pierce.png",
+                "addglow": [[1], "generation/layers/pierceOn.png"]
             }
         },
 
@@ -69,7 +70,8 @@
             },
             "sprite":{
                 "add": "generation/layers/bio.png",
-                "glow": "generation/layers/glowBio.png"
+                "glow": "generation/layers/glowBio.png",
+                "addglow": [[1], "generation/layers/bioOn.png"]
             }
         },
 
@@ -83,7 +85,8 @@
                 "cooldown": "8"
             },
             "sprite":{
-                "add": "generation/layers/cooldown.png"
+                "add": "generation/layers/cooldown.png",
+                "addglow": [[1], "generation/layers/cooldownOn.png"]
             }
         },
 
@@ -97,7 +100,8 @@
             },
             "sprite":{
                 "add": "generation/layers/stun.png",
-                "glow": "generation/layers/glowStun.png"
+                "glow": "generation/layers/glowStun.png",
+                "addglow": [[1], "generation/layers/stunOn.png"]
             }
         },
 

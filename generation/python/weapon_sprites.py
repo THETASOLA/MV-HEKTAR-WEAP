@@ -76,7 +76,11 @@ def handle_layer_addition(base_image, data, separation_width, main, second):
                     continue
                 
                 second_path = second['sprite'][key]
-                for i in range(data['spriteData']['base']['multiplier'] + 1):
+                sprite_range = range(data['spriteData']['base']['multiplier'] + 1)
+                if second_path.__class__ == list:
+                    sprite_range = second_path[0]
+                    second_path = second_path[1]
+                for i in sprite_range:
                     layer_image = Image.open(second_path)
                     position = (get_position_x(i, separation_width), 0)
                     add_layer(base_image, layer_image, position)
