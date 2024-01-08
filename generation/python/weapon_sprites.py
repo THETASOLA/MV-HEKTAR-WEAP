@@ -31,16 +31,17 @@ def detect_first_pixel(image, up=True):
 
 def remove_percentage(image, percentage, position):
     width, height = image.size
-    height_top = height - detect_first_pixel(image, True)
-    pixels_to_remove = detect_first_pixel(image, False) - int(height_top * percentage * position / 100)
+    sprite_height = detect_first_pixel(image, False) - detect_first_pixel(image)
 
-    pixels_to_remove = max(pixels_to_remove, detect_first_pixel(image, True))
+    pixels_to_remove = sprite_height - int(sprite_height * percentage * (position + 5) / 100) + detect_first_pixel(image)
+
+    pixels_to_remove = max(pixels_to_remove, detect_first_pixel(image))
 
     new_image = image.crop((0, 0, width, pixels_to_remove))
     return new_image
 
 def handle_layer_addition(base_image, data, separation_width, main, second):
-    percentage = (1 / (data['spriteData']['base']['multiplier'] + 1)) * 100
+    percentage = (1 / (data['spriteData']['base']['multiplier'] + 5)) * 100
     used_layer_names = set()
 
     for layer_config in data['spriteData']['layers']:
@@ -96,8 +97,10 @@ def handle_layer_addition(base_image, data, separation_width, main, second):
         if positions_start:
             for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
                 layer_image = Image.open(layer_path)
+
                 if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
                     layer_image = remove_percentage(layer_image, percentage, i - 4)
+                
                 position = (get_position_x(i-1, separation_width), 0)
                 add_layer(base_image, layer_image, position)
 
@@ -116,6 +119,24 @@ def acquire_modules_data(data):
 
     return modules_data
 
+def generate_animation_data(xml, name):
+
+    xml += f"""
+<animSheet name="focus_{name}" w="270" h="65" fw="30" fh="65">weapon_focus/focus_{name}.png</animSheet>
+<weaponAnim name="focus_{name}">
+	<sheet>focus_{name}</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="38"/>
+	<mountPoint x="5" y="59"/>
+	<chargeImage>weapon_focus/focus_{name}_glow.png</chargeImage>
+</weaponAnim>
+"""
+
+    return xml
+
+
 def main():
     with open('generation/json/weapon_pinpoint.json') as json_file:
         data = json.load(json_file)
@@ -125,6 +146,7 @@ def main():
 
     base_path = sprite_base['path']
     multiplier = sprite_base['multiplier']
+    animation_xml = ""
 
     base_image, separation_width = multiply_horizontal(base_path, multiplier)
 
@@ -135,10 +157,13 @@ def main():
             copy_image = base_image.copy()
             print(f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
+            animation_xml = generate_animation_data(animation_xml, f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
 
             result_image = copy_image
-            #result_image.show()
-            result_image.save(f"output/img/sprite_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
+            result_image.save(f"output/img/modular_weapon/focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
+    
+    with open("output/data/animations.xml.append", "w") as xml_file:
+        xml_file.write(animation_xml)
 
 if __name__ == "__main__":
     main()

@@ -14,18 +14,18 @@
                 "name": "glow",
                 "path": "generation/layers/glow.png",
                 "positionsStart": 2,
-                "remove_from": 4
+                "remove_from": 3
             }
         ]
     },
 
     "weaponBlueprint": {
-        "@name": "MODULAR_PINPOINT",
+        "@name": "MODULAR_FOCUS",
         "type": "BEAM",
         "title": "Modular Pinpoint",
         "tip": "tip_focus",
         "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Pinpoint. It supports 1 attribute module and 1 status module.\nIncompatible with the accuracy and lockdown module.",
-        "damage": "2",
+        "damage": "3",
         "sp": "0",
         "fireChance": "0",
         "breachChance": "2",
@@ -125,7 +125,8 @@
             "modName": "Hull Module",
             "stats":{
                 "hullBust": "1",
-                "breachChance": "2"
+                "breachChance": "2",
+                "damage": "4"
             },
             "sprite":{
                 "add": "generation/layers/hull.png"
@@ -140,7 +141,7 @@
             "stats":{
                 "weaponArt": "focus_2",
                 "power": "3",
-                "damage": "4"
+                "damage": "5"
             },
             "sprite":{
                 "add": "generation/layers/power.png"
