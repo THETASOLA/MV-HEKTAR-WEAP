@@ -1,16 +1,19 @@
-<weaponBlueprint name="MODULAR_PINPOINT_BASE">
+<weaponBlueprint name="MODULAR_FOCUS_BASE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Pinpoint. It supports 1 attribute module and 1 status module.
 Incompatible with the accuracy and lockdown module.</desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -19,12 +22,13 @@ Incompatible with the accuracy and lockdown module.</desc>
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_base</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_BASE_PIERCE">
+<weaponBlueprint name="MODULAR_FOCUS_BASE_PIERCE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -32,13 +36,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Pierce
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>1</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -47,12 +53,13 @@ Status - Pierce
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_base_pierce</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_BASE_BIO">
+<weaponBlueprint name="MODULAR_FOCUS_BASE_BIO">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -60,13 +67,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Bio
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -75,7 +84,7 @@ Status - Bio
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_base_bio</weaponArt>
   <iconImage>beam</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
@@ -109,8 +118,9 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_BASE_COOLDOWN">
+<weaponBlueprint name="MODULAR_FOCUS_BASE_COOLDOWN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -118,13 +128,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Cooldown
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>8</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -133,12 +145,13 @@ Status - Cooldown
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_base_cooldown</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_BASE_STUN">
+<weaponBlueprint name="MODULAR_FOCUS_BASE_STUN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -146,13 +159,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Stun
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -161,13 +176,14 @@ Status - Stun
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_base_stun</weaponArt>
   <iconImage>beam</iconImage>
   <stun>25</stun>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_FIRE">
+<weaponBlueprint name="MODULAR_FOCUS_FIRE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -175,13 +191,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>5</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -190,12 +208,13 @@ Attribute - Fire
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_fire_base</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_HULL">
+<weaponBlueprint name="MODULAR_FOCUS_HULL">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -203,13 +222,15 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>4</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -218,13 +239,14 @@ Attribute - Hull
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_hull_base</weaponArt>
   <iconImage>beam</iconImage>
   <hullBust>1</hullBust>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_POWER">
+<weaponBlueprint name="MODULAR_FOCUS_POWER">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -232,11 +254,13 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 </desc>
-  <damage>4</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>5</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
   <power>3</power>
   <cost>65</cost>
@@ -251,8 +275,9 @@ Attribute - Power
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_FIRE_PIERCE">
+<weaponBlueprint name="MODULAR_FOCUS_FIRE_PIERCE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -261,13 +286,15 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Pierce
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>1</sp>
   <fireChance>5</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -276,12 +303,13 @@ Status - Pierce
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_fire_pierce</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_FIRE_BIO">
+<weaponBlueprint name="MODULAR_FOCUS_FIRE_BIO">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -290,13 +318,15 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Bio
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>5</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -305,7 +335,7 @@ Status - Bio
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_fire_bio</weaponArt>
   <iconImage>beam</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
@@ -339,8 +369,9 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_FIRE_COOLDOWN">
+<weaponBlueprint name="MODULAR_FOCUS_FIRE_COOLDOWN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -349,13 +380,15 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Cooldown
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>5</fireChance>
   <breachChance>2</breachChance>
   <cooldown>8</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -364,12 +397,13 @@ Status - Cooldown
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_fire_cooldown</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_FIRE_STUN">
+<weaponBlueprint name="MODULAR_FOCUS_FIRE_STUN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -378,13 +412,15 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Stun
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>3</damage>
   <sp>0</sp>
   <fireChance>5</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -393,13 +429,14 @@ Status - Stun
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_fire_stun</weaponArt>
   <iconImage>beam</iconImage>
   <stun>25</stun>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_HULL_PIERCE">
+<weaponBlueprint name="MODULAR_FOCUS_HULL_PIERCE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -408,13 +445,15 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Pierce
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>4</damage>
   <sp>1</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -423,13 +462,14 @@ Status - Pierce
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_hull_pierce</weaponArt>
   <iconImage>beam</iconImage>
   <hullBust>1</hullBust>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_HULL_BIO">
+<weaponBlueprint name="MODULAR_FOCUS_HULL_BIO">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -438,13 +478,15 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Bio
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>4</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -453,7 +495,7 @@ Status - Bio
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_hull_bio</weaponArt>
   <iconImage>beam</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
@@ -488,8 +530,9 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_HULL_COOLDOWN">
+<weaponBlueprint name="MODULAR_FOCUS_HULL_COOLDOWN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -498,13 +541,15 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Cooldown
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>4</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>8</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -513,13 +558,14 @@ Status - Cooldown
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_hull_cooldown</weaponArt>
   <iconImage>beam</iconImage>
   <hullBust>1</hullBust>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_HULL_STUN">
+<weaponBlueprint name="MODULAR_FOCUS_HULL_STUN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -528,13 +574,15 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Stun
 </desc>
-  <damage>2</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>4</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
-  <power>1</power>
+  <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>2</rarity>
@@ -543,14 +591,15 @@ Status - Stun
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_1</weaponArt>
+  <weaponArt>modular_focus_hull_stun</weaponArt>
   <iconImage>beam</iconImage>
   <hullBust>1</hullBust>
   <stun>25</stun>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_POWER_PIERCE">
+<weaponBlueprint name="MODULAR_FOCUS_POWER_PIERCE">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -559,11 +608,13 @@ Has no incompatible modules.
 Attribute - Power
 Status - Pierce
 </desc>
-  <damage>4</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>5</damage>
   <sp>1</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
   <power>3</power>
   <cost>65</cost>
@@ -578,8 +629,9 @@ Status - Pierce
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_POWER_BIO">
+<weaponBlueprint name="MODULAR_FOCUS_POWER_BIO">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -588,11 +640,13 @@ Has no incompatible modules.
 Attribute - Power
 Status - Bio
 </desc>
-  <damage>4</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>5</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
   <power>3</power>
   <cost>65</cost>
@@ -637,8 +691,9 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_POWER_COOLDOWN">
+<weaponBlueprint name="MODULAR_FOCUS_POWER_COOLDOWN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -647,7 +702,9 @@ Has no incompatible modules.
 Attribute - Power
 Status - Cooldown
 </desc>
-  <damage>4</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>5</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
@@ -666,8 +723,9 @@ Status - Cooldown
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_PINPOINT_POWER_STUN">
+<weaponBlueprint name="MODULAR_FOCUS_POWER_STUN">
   <type>BEAM</type>
+  <flavorType>Pinpoint</flavorType>
   <title>Modular Pinpoint</title>
   <tip>tip_focus</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
@@ -676,11 +734,13 @@ Has no incompatible modules.
 Attribute - Power
 Status - Stun
 </desc>
-  <damage>4</damage>
+  <short>M. Pinpoint</short>
+  <tooltip>One damage per room beam weapon</tooltip>
+  <damage>5</damage>
   <sp>0</sp>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>16</cooldown>
   <speed>1</speed>
   <power>3</power>
   <cost>65</cost>

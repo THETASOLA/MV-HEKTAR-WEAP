@@ -6,15 +6,21 @@
         },
         "layers": [
             {
-                "name": "ready",
-                "path": "generation/layers/on.png",
-                "positions": [2]
-            },
-            {
                 "name": "glow",
                 "path": "generation/layers/glow.png",
                 "positionsStart": 2,
                 "remove_from": 3
+            },
+            {
+                "name": "ready",
+                "path": "generation/layers/on.png",
+                "positions": [2]
+            },
+            
+            {
+                "name": "below",
+                "path": "generation/layers/below.png",
+                "positions": [1,2]
             }
         ]
     },
@@ -22,16 +28,19 @@
     "weaponBlueprint": {
         "@name": "MODULAR_FOCUS",
         "type": "BEAM",
+        "flavorType": "Pinpoint",
         "title": "Modular Pinpoint",
         "tip": "tip_focus",
         "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Pinpoint. It supports 1 attribute module and 1 status module.\nIncompatible with the accuracy and lockdown module.",
+        "short": "M. Pinpoint",
+        "tooltip": "One damage per room beam weapon",
         "damage": "3",
         "sp": "0",
         "fireChance": "0",
         "breachChance": "2",
-        "cooldown": "10",
+        "cooldown": "16",
         "speed": "1",
-        "power": "1",
+        "power": "2",
         "cost": "65",
         "bp": "2",
         "rarity": "2",
@@ -40,7 +49,7 @@
         "launchSounds": {
             "sound": "focus_weak"
         },
-        "weaponArt": "focus_1",
+        "weaponArt": "modular_focus_base",
         "iconImage": "beam"
     },
 
@@ -55,7 +64,7 @@
             },
             "sprite":{
                 "add": "generation/layers/pierce.png",
-                "addglow": [[1], "generation/layers/pierceOn.png"]
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pierceOn.png"]
             }
         },
 
@@ -71,7 +80,7 @@
             "sprite":{
                 "add": "generation/layers/bio.png",
                 "glow": "generation/layers/glowBio.png",
-                "addglow": [[1], "generation/layers/bioOn.png"]
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/bioOn.png"]
             }
         },
 
@@ -86,7 +95,7 @@
             },
             "sprite":{
                 "add": "generation/layers/cooldown.png",
-                "addglow": [[1], "generation/layers/cooldownOn.png"]
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/cooldownOn.png"]
             }
         },
 
@@ -101,7 +110,7 @@
             "sprite":{
                 "add": "generation/layers/stun.png",
                 "glow": "generation/layers/glowStun.png",
-                "addglow": [[1], "generation/layers/stunOn.png"]
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/stunOn.png"]
             }
         },
 
@@ -144,7 +153,8 @@
                 "damage": "5"
             },
             "sprite":{
-                "add": "generation/layers/power.png"
+                "add": "generation/layers/power.png",
+                "addBelow": [[0,1], "generation/layers/powerBelow.png"]
             }
         }
     }

@@ -1,220 +1,221 @@
-
-<animSheet name="focus_BASE_BASE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_BASE_BASE.png</animSheet>
-<weaponAnim name="focus_BASE_BASE">
-	<sheet>focus_BASE_BASE</sheet>
+<FTL>
+<animSheet name="modular_focus_base_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_base_base.png</animSheet>
+<weaponAnim name="modular_focus_base_base">
+	<sheet>modular_focus_base_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_BASE_BASE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_base_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_BASE_PIERCE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_BASE_PIERCE.png</animSheet>
-<weaponAnim name="focus_BASE_PIERCE">
-	<sheet>focus_BASE_PIERCE</sheet>
+<animSheet name="modular_focus_base_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_base_pierce.png</animSheet>
+<weaponAnim name="modular_focus_base_pierce">
+	<sheet>modular_focus_base_pierce_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_BASE_PIERCE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_base_pierce_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_BASE_BIO" w="270" h="65" fw="30" fh="65">weapon_focus/focus_BASE_BIO.png</animSheet>
-<weaponAnim name="focus_BASE_BIO">
-	<sheet>focus_BASE_BIO</sheet>
+<animSheet name="modular_focus_base_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_base_bio.png</animSheet>
+<weaponAnim name="modular_focus_base_bio">
+	<sheet>modular_focus_base_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_BASE_BIO_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_base_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_BASE_COOLDOWN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_BASE_COOLDOWN.png</animSheet>
-<weaponAnim name="focus_BASE_COOLDOWN">
-	<sheet>focus_BASE_COOLDOWN</sheet>
+<animSheet name="modular_focus_base_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_base_cooldown.png</animSheet>
+<weaponAnim name="modular_focus_base_cooldown">
+	<sheet>modular_focus_base_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_BASE_COOLDOWN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_base_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_BASE_STUN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_BASE_STUN.png</animSheet>
-<weaponAnim name="focus_BASE_STUN">
-	<sheet>focus_BASE_STUN</sheet>
+<animSheet name="modular_focus_base_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_base_stun.png</animSheet>
+<weaponAnim name="modular_focus_base_stun">
+	<sheet>modular_focus_base_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_BASE_STUN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_base_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_FIRE_BASE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_FIRE_BASE.png</animSheet>
-<weaponAnim name="focus_FIRE_BASE">
-	<sheet>focus_FIRE_BASE</sheet>
+<animSheet name="modular_focus_fire_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_fire_base.png</animSheet>
+<weaponAnim name="modular_focus_fire_base">
+	<sheet>modular_focus_fire_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_FIRE_BASE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_fire_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_FIRE_PIERCE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_FIRE_PIERCE.png</animSheet>
-<weaponAnim name="focus_FIRE_PIERCE">
-	<sheet>focus_FIRE_PIERCE</sheet>
+<animSheet name="modular_focus_fire_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_fire_pierce.png</animSheet>
+<weaponAnim name="modular_focus_fire_pierce">
+	<sheet>modular_focus_fire_pierce_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_FIRE_PIERCE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_fire_pierce_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_FIRE_BIO" w="270" h="65" fw="30" fh="65">weapon_focus/focus_FIRE_BIO.png</animSheet>
-<weaponAnim name="focus_FIRE_BIO">
-	<sheet>focus_FIRE_BIO</sheet>
+<animSheet name="modular_focus_fire_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_fire_bio.png</animSheet>
+<weaponAnim name="modular_focus_fire_bio">
+	<sheet>modular_focus_fire_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_FIRE_BIO_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_fire_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_FIRE_COOLDOWN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_FIRE_COOLDOWN.png</animSheet>
-<weaponAnim name="focus_FIRE_COOLDOWN">
-	<sheet>focus_FIRE_COOLDOWN</sheet>
+<animSheet name="modular_focus_fire_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_fire_cooldown.png</animSheet>
+<weaponAnim name="modular_focus_fire_cooldown">
+	<sheet>modular_focus_fire_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_FIRE_COOLDOWN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_fire_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_FIRE_STUN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_FIRE_STUN.png</animSheet>
-<weaponAnim name="focus_FIRE_STUN">
-	<sheet>focus_FIRE_STUN</sheet>
+<animSheet name="modular_focus_fire_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_fire_stun.png</animSheet>
+<weaponAnim name="modular_focus_fire_stun">
+	<sheet>modular_focus_fire_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_FIRE_STUN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_fire_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_HULL_BASE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_HULL_BASE.png</animSheet>
-<weaponAnim name="focus_HULL_BASE">
-	<sheet>focus_HULL_BASE</sheet>
+<animSheet name="modular_focus_hull_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_hull_base.png</animSheet>
+<weaponAnim name="modular_focus_hull_base">
+	<sheet>modular_focus_hull_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_HULL_BASE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_hull_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_HULL_PIERCE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_HULL_PIERCE.png</animSheet>
-<weaponAnim name="focus_HULL_PIERCE">
-	<sheet>focus_HULL_PIERCE</sheet>
+<animSheet name="modular_focus_hull_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_hull_pierce.png</animSheet>
+<weaponAnim name="modular_focus_hull_pierce">
+	<sheet>modular_focus_hull_pierce_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_HULL_PIERCE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_hull_pierce_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_HULL_BIO" w="270" h="65" fw="30" fh="65">weapon_focus/focus_HULL_BIO.png</animSheet>
-<weaponAnim name="focus_HULL_BIO">
-	<sheet>focus_HULL_BIO</sheet>
+<animSheet name="modular_focus_hull_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_hull_bio.png</animSheet>
+<weaponAnim name="modular_focus_hull_bio">
+	<sheet>modular_focus_hull_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_HULL_BIO_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_hull_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_HULL_COOLDOWN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_HULL_COOLDOWN.png</animSheet>
-<weaponAnim name="focus_HULL_COOLDOWN">
-	<sheet>focus_HULL_COOLDOWN</sheet>
+<animSheet name="modular_focus_hull_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_hull_cooldown.png</animSheet>
+<weaponAnim name="modular_focus_hull_cooldown">
+	<sheet>modular_focus_hull_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_HULL_COOLDOWN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_hull_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_HULL_STUN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_HULL_STUN.png</animSheet>
-<weaponAnim name="focus_HULL_STUN">
-	<sheet>focus_HULL_STUN</sheet>
+<animSheet name="modular_focus_hull_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_hull_stun.png</animSheet>
+<weaponAnim name="modular_focus_hull_stun">
+	<sheet>modular_focus_hull_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_HULL_STUN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_hull_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_POWER_BASE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_POWER_BASE.png</animSheet>
-<weaponAnim name="focus_POWER_BASE">
-	<sheet>focus_POWER_BASE</sheet>
+<animSheet name="modular_focus_power_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_power_base.png</animSheet>
+<weaponAnim name="modular_focus_power_base">
+	<sheet>modular_focus_power_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_POWER_BASE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_power_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_POWER_PIERCE" w="270" h="65" fw="30" fh="65">weapon_focus/focus_POWER_PIERCE.png</animSheet>
-<weaponAnim name="focus_POWER_PIERCE">
-	<sheet>focus_POWER_PIERCE</sheet>
+<animSheet name="modular_focus_power_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_power_pierce.png</animSheet>
+<weaponAnim name="modular_focus_power_pierce">
+	<sheet>modular_focus_power_pierce_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_POWER_PIERCE_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_power_pierce_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_POWER_BIO" w="270" h="65" fw="30" fh="65">weapon_focus/focus_POWER_BIO.png</animSheet>
-<weaponAnim name="focus_POWER_BIO">
-	<sheet>focus_POWER_BIO</sheet>
+<animSheet name="modular_focus_power_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_power_bio.png</animSheet>
+<weaponAnim name="modular_focus_power_bio">
+	<sheet>modular_focus_power_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_POWER_BIO_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_power_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_POWER_COOLDOWN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_POWER_COOLDOWN.png</animSheet>
-<weaponAnim name="focus_POWER_COOLDOWN">
-	<sheet>focus_POWER_COOLDOWN</sheet>
+<animSheet name="modular_focus_power_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_power_cooldown.png</animSheet>
+<weaponAnim name="modular_focus_power_cooldown">
+	<sheet>modular_focus_power_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_POWER_COOLDOWN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_power_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="focus_POWER_STUN" w="270" h="65" fw="30" fh="65">weapon_focus/focus_POWER_STUN.png</animSheet>
-<weaponAnim name="focus_POWER_STUN">
-	<sheet>focus_POWER_STUN</sheet>
+<animSheet name="modular_focus_power_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_power_stun.png</animSheet>
+<weaponAnim name="modular_focus_power_stun">
+	<sheet>modular_focus_power_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/focus_POWER_STUN_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_focus_power_stun_glow.png</chargeImage>
 </weaponAnim>
+</FTL>
