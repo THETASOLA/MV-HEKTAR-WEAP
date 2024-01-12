@@ -40,6 +40,42 @@ def remove_percentage(image, percentage, position):
     new_image = image.crop((0, 0, width, pixels_to_remove))
     return new_image
 
+def process_sprite_data(data, base_image, sprite_dict, used_layer_names, separation_width):
+    if 'sprite' in sprite_dict:
+        for key in sprite_dict['sprite'].keys():
+            if key in used_layer_names:
+                continue
+
+            path = sprite_dict['sprite'][key]
+            sprite_range = range(data['spriteData']['base']['multiplier'] + 1)
+            
+            if path.__class__ == list:
+                sprite_range = path[0]
+                path = path[1]
+                
+            for i in sprite_range:
+                layer_image = Image.open(path)
+                position = (get_position_x(i, separation_width), 0)
+                add_layer(base_image, layer_image, position)
+                used_layer_names.add(key)
+
+def add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage=None):
+    for i in positions:
+        layer_image = Image.open(layer_path)
+        position = (get_position_x(i - 1, separation_width), 0)
+        add_layer(base_image, layer_image, position)
+
+    positions_start = layer_config.get('positionsStart', None)
+    if positions_start:
+        for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
+            layer_image = Image.open(layer_path)
+
+            if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
+                layer_image = remove_percentage(layer_image, percentage, i - 4)
+
+            position = (get_position_x(i - 1, separation_width), 0)
+            add_layer(base_image, layer_image, position)
+
 def handle_layer_addition(base_image, data, separation_width, main, second):
     
     percentage = (1 / (data['spriteData']['base']['multiplier'] + 5)) * 100
@@ -59,56 +95,12 @@ def handle_layer_addition(base_image, data, separation_width, main, second):
             layer_path = main_sprite_override or second_sprite_override or layer_path
             used_layer_names.add(layer_name)
 
-        if 'sprite' in main:
-            for key in main['sprite'].keys():
-                if key in used_layer_names:
-                    continue
-
-                main_path = main['sprite'][key]
-                sprite_range = range(data['spriteData']['base']['multiplier'] + 1)
-                if main_path.__class__ == list:
-                    sprite_range = main_path[0]
-                    main_path = main_path[1]
-                for i in sprite_range:
-                    layer_image = Image.open(main_path)
-                    position = (get_position_x(i, separation_width), 0)
-                    add_layer(base_image, layer_image, position)
-        
-        if 'sprite' in second:
-            for key in second['sprite'].keys():
-                if key in used_layer_names:
-                    continue
-                print(key)
-                
-                used_layer_names.add(key)
-                second_path = second['sprite'][key]
-                sprite_range = range(data['spriteData']['base']['multiplier'] + 1)
-                if second_path.__class__ == list:
-                    sprite_range = second_path[0]
-                    second_path = second_path[1]
-                for i in sprite_range:
-                    layer_image = Image.open(second_path)
-                    position = (get_position_x(i, separation_width), 0)
-                    add_layer(base_image, layer_image, position)
+        process_sprite_data(data, base_image, main, used_layer_names, separation_width)
+        process_sprite_data(data, base_image, second, used_layer_names, separation_width)
 
         positions = layer_config.get('positions', [])
-        positions_start = layer_config.get('positionsStart', None)
 
-        for i in positions:
-            layer_image = Image.open(layer_path)
-            position = (get_position_x(i-1, separation_width), 0)
-            add_layer(base_image, layer_image, position)
-
-        if positions_start:
-            print(layer_path, positions_start)
-            for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
-                layer_image = Image.open(layer_path)
-                
-                if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
-                    layer_image = remove_percentage(layer_image, percentage, i - 4)
-                
-                position = (get_position_x(i-1, separation_width), 0)
-                add_layer(base_image, layer_image, position)
+        add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage)
 
 def acquire_modules_data(data):
     modules_data = {'main': {"base":{
@@ -143,6 +135,16 @@ def generate_animation_data(xml, name):
 
     return xml
 
+def generate_glow(data, modules_data, main_module, second_module):
+    glow_image_path = next((layer['path'] for layer in data['spriteData']['layers'] if layer['name'] == 'glow'), data['spriteData']['base']['path'])
+    glow_image = Image.open(glow_image_path)
+
+    if 'sprite' in modules_data['main'][main_module] and 'glow' in modules_data['main'][main_module]['sprite']:
+        glow_image = Image.open(modules_data['main'][main_module]['sprite']['glow'])
+    if 'sprite' in modules_data['second'][second_module] and 'glow' in modules_data['second'][second_module]['sprite']:
+        glow_image = Image.open(modules_data['second'][second_module]['sprite']['glow'])
+    
+    glow_image.save(f"output/img/modular_weapon/modular_focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}_glow.png")
 
 def main():
     with open('generation/json/weapon_pinpoint.json') as json_file:
@@ -161,21 +163,17 @@ def main():
 
     for main_module in modules_data['main']:
         for second_module in modules_data['second']:
-            copy_image = base_image.copy()
+
             print(f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
+            copy_image = base_image.copy()
+            
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
             animation_xml = generate_animation_data(animation_xml, f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
 
             result_image = copy_image
             result_image.save(f"output/img/modular_weapon/modular_focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
 
-            glow_image = Image.open(data['spriteData']['layers'][1]['path'])
-            if 'sprite' in modules_data['main'][main_module] and 'glow' in modules_data['main'][main_module]['sprite']:
-                glow_image = Image.open(modules_data['main'][main_module]['sprite']['glow'])
-            if 'sprite' in modules_data['second'][second_module] and 'glow' in modules_data['second'][second_module]['sprite']:
-                glow_image = Image.open(modules_data['second'][second_module]['sprite']['glow'])
-            
-            glow_image.save(f"output/img/modular_weapon/modular_focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}_glow.png")
+            generate_glow(data, modules_data, main_module, second_module)
     
     with open("output/data/animations.xml.append", "w") as xml_file:
         xml_file.write(animation_xml + "</FTL>")

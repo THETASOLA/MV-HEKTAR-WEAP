@@ -1,25 +1,25 @@
 {
     "spriteData": {
         "base": {
-            "path": "generation/layers/body.png",
+            "path": "generation/layers/pinpoint/body.png",
             "multiplier": 9
         },
         "layers": [
             {
                 "name": "glow",
-                "path": "generation/layers/glow.png",
+                "path": "generation/layers/pinpoint/glow.png",
                 "positionsStart": 2,
                 "remove_from": 3
             },
             {
                 "name": "ready",
-                "path": "generation/layers/on.png",
+                "path": "generation/layers/pinpoint/on.png",
                 "positions": [2]
             },
             
             {
                 "name": "below",
-                "path": "generation/layers/below.png",
+                "path": "generation/layers/pinpoint/below.png",
                 "positions": [1,2]
             }
         ]
@@ -63,8 +63,8 @@
                 "sp": "1"
             },
             "sprite":{
-                "add": "generation/layers/pierce.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pierceOn.png"]
+                "add": "generation/layers/pinpoint/pierce.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/pierceOn.png"]
             }
         },
 
@@ -78,9 +78,9 @@
                 "persDamage": "6"
             },
             "sprite":{
-                "add": "generation/layers/bio.png",
-                "glow": "generation/layers/glowBio.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/bioOn.png"]
+                "add": "generation/layers/pinpoint/bio.png",
+                "glow": "generation/layers/pinpoint/glowBio.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/bioOn.png"]
             }
         },
 
@@ -94,8 +94,8 @@
                 "cooldown": "8"
             },
             "sprite":{
-                "add": "generation/layers/cooldown.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/cooldownOn.png"]
+                "add": "generation/layers/pinpoint/cooldown.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/cooldownOn.png"]
             }
         },
 
@@ -108,9 +108,9 @@
                 "stun": "25"
             },
             "sprite":{
-                "add": "generation/layers/stun.png",
-                "glow": "generation/layers/glowStun.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/stunOn.png"]
+                "add": "generation/layers/pinpoint/stun.png",
+                "glow": "generation/layers/pinpoint/glowStun.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/stunOn.png"]
             }
         },
 
@@ -123,7 +123,7 @@
                 "fireChance": "5"
             },
             "sprite":{
-                "add": "generation/layers/fire.png"
+                "add": "generation/layers/pinpoint/fire.png"
             }
         },
         
@@ -138,7 +138,8 @@
                 "damage": "4"
             },
             "sprite":{
-                "add": "generation/layers/hull.png"
+                "add": "generation/layers/pinpoint/hull.png",
+                "addOn": [[1], "generation/layers/pinpoint/hullOn.png"]
             }
         },
 
@@ -153,8 +154,8 @@
                 "damage": "5"
             },
             "sprite":{
-                "add": "generation/layers/power.png",
-                "addBelow": [[0,1], "generation/layers/powerBelow.png"]
+                "add": "generation/layers/pinpoint/power.png",
+                "addBelow": [[0,1], "generation/layers/pinpoint/powerBelow.png"]
             }
         }
     }
