@@ -1,0 +1,58 @@
+{
+    "spriteData": {
+        "name": "bomb/bomb",
+        "animation": "bomb",
+        "noglow": true,
+        "tpfrom": 11,
+        "base": {
+            "path": "generation/layers/bomb/bombBody.png",
+            "multiplier": 15
+        },
+        "layers": [
+            {
+                "name": "glow",
+                "path": "generation/layers/bomb/bombGlow.png",
+                "positions": [1,3,5,7,9]
+            }
+        ]
+    },
+
+    "modules": {
+
+        "moduleBio": {
+            "name": "BIO",
+            "main": false,
+
+            "sprite":{
+                "glow": "generation/layers/bomb/bombBioGlow.png"
+            }
+        },
+
+        "moduleCooldown": {
+            "name": "COOLDOWN",
+            "main": false,
+
+            "sprite":{
+                "glow": "generation/layers/bomb/bombCooldownGlow.png"
+            }
+        },
+
+        "moduleLockdown": {
+            "name": "LOCKDOWN",
+            "main": false,
+
+            "sprite":{
+                "glow": "generation/layers/bomb/bombLockdownGlow.png"
+            }
+        },
+
+        "moduleStun": {
+            "name": "STUN",
+            "main": false,
+
+            "sprite":{
+                "glow": "generation/layers/bomb/bombStunGlow.png"
+            }
+        }
+    }
+}

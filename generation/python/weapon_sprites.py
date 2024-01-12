@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw
 import json
+import random
 
 def multiply_horizontal(image_path, multiplier):
     original_image = Image.open(image_path).convert("RGBA")
@@ -59,13 +60,77 @@ def process_sprite_data(data, base_image, sprite_dict, used_layer_names, separat
                 add_layer(base_image, layer_image, position)
                 used_layer_names.add(key)
 
+def find_translate(count, separation_width, movData):
+    positionY = 0
+    positionX = get_position_x(count - 1, separation_width)
+
+    if movData:
+        for set in movData:
+            if count in set[0]:
+                positionX += set[1][0]
+                positionY += set[1][1]
+    return (positionX, positionY)
+
+def teleportation_effect(image, separation_width, movData):
+    width, height = image.size
+    #isolate the pixel between separation_width * movData and separation_width * (movData + 1) < width
+    maxRange = 0
+    opacity = 0.8
+    while separation_width * (movData + maxRange) < width:
+        maxRange += 1
+    for i in range(1, maxRange + 1):
+        nDisplaced = maxRange - i + 3
+        count = 0
+        for y in range(height):
+            displacement = random.randint(1, i+1)
+            
+            if count < nDisplaced:
+                for x in range(separation_width * (i - 1), separation_width * i - 10):
+                    pixel = image.getpixel((separation_width * movData + x, y))
+                    if pixel[3] != 0:
+                        moved_pixel = (
+                            pixel[0],
+                            pixel[1],
+                            pixel[2],
+                            int(pixel[3] * opacity ** i)
+                        )
+                        image.putpixel(
+                            (separation_width * movData + x - displacement, y),
+                            moved_pixel
+                        )
+                        image.putpixel(
+                            (separation_width * movData + x, y),
+                            (0, 0, 0, 0)
+                        )
+            else:
+                for x in range(separation_width * i - 10, separation_width * (i - 1), -1):
+                    pixel = image.getpixel((separation_width * movData + x, y))
+                    if pixel[3] != 0:
+                        moved_pixel = (
+                            pixel[0],
+                            pixel[1],
+                            pixel[2],
+                            int(pixel[3] * opacity ** i)
+                        )
+                        image.putpixel(
+                            (separation_width * movData + x + displacement, y),
+                            moved_pixel
+                        )
+                        image.putpixel(
+                            (separation_width * movData + x, y),
+                            (0, 0, 0, 0)
+                        )
+            count = (count + 1)%(nDisplaced*2)
+                
+
 def add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage=None):
     for i in positions:
         layer_image = Image.open(layer_path)
-        position = (get_position_x(i - 1, separation_width), 0)
+        position = find_translate(i, separation_width, layer_config.get('movement', None))
         add_layer(base_image, layer_image, position)
 
     positions_start = layer_config.get('positionsStart', None)
+
     if positions_start:
         for i in range(positions_start, data['spriteData']['base']['multiplier'] + 1):
             layer_image = Image.open(layer_path)
@@ -73,7 +138,7 @@ def add_layers_with_positions(data, base_image, layer_path, positions, separatio
             if 'remove_from' in layer_config and layer_config['remove_from'] <= i:
                 layer_image = remove_percentage(layer_image, percentage, i - 4)
 
-            position = (get_position_x(i - 1, separation_width), 0)
+            position = find_translate(i, separation_width, layer_config.get('movement', None))
             add_layer(base_image, layer_image, position)
 
 def handle_layer_addition(base_image, data, separation_width, main, second):
@@ -117,7 +182,61 @@ def acquire_modules_data(data):
 
     return modules_data
 
-def generate_animation_data(xml, name):
+def generate_animation_data_pinpoint(xml, name):
+    name = name.lower()
+
+    xml += f"""
+<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
+<weaponAnim name="modular_focus_{name}">
+	<sheet>modular_focus_{name}_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="38"/>
+	<mountPoint x="5" y="59"/>
+	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+</weaponAnim>
+"""
+
+    return xml
+
+def generate_animation_data_bombL(xml, name):
+    name = name.lower()
+
+    xml += f"""
+<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
+<weaponAnim name="modular_focus_{name}">
+	<sheet>modular_focus_{name}_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="38"/>
+	<mountPoint x="5" y="59"/>
+	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+</weaponAnim>
+"""
+
+    return xml
+
+def generate_animation_data_bomb(xml, name):
+    name = name.lower()
+
+    xml += f"""
+<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
+<weaponAnim name="modular_focus_{name}">
+	<sheet>modular_focus_{name}_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="38"/>
+	<mountPoint x="5" y="59"/>
+	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+</weaponAnim>
+"""
+
+    return xml
+
+def generate_animation_data_flak(xml, name):
     name = name.lower()
 
     xml += f"""
@@ -144,18 +263,23 @@ def generate_glow(data, modules_data, main_module, second_module):
     if 'sprite' in modules_data['second'][second_module] and 'glow' in modules_data['second'][second_module]['sprite']:
         glow_image = Image.open(modules_data['second'][second_module]['sprite']['glow'])
     
-    glow_image.save(f"output/img/modular_weapon/modular_focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}_glow.png")
+    glow_image.save(f"output/img/modular_weapon/{data['spriteData']['name']}_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}_glow.png")
 
-def main():
-    with open('generation/json/weapon_pinpoint.json') as json_file:
-        data = json.load(json_file)
+animation_data = {
+    'pinpoint': generate_animation_data_pinpoint,
+    'bomb_launcher': generate_animation_data_bombL,
+    'bomb': generate_animation_data_bomb,
+    'flak': generate_animation_data_flak
+}
+
+def generate(data, animation_xml):
     
     sprite_data = data['spriteData']
     sprite_base = sprite_data['base']
 
     base_path = sprite_base['path']
     multiplier = sprite_base['multiplier']
-    animation_xml = "<FTL>"
+    
 
     base_image, separation_width = multiply_horizontal(base_path, multiplier)
 
@@ -168,15 +292,34 @@ def main():
             copy_image = base_image.copy()
             
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
-            animation_xml = generate_animation_data(animation_xml, f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
+            animation_xml = animation_data[sprite_data['animation']](animation_xml, f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
+
+            if 'tpfrom' in sprite_data:
+                teleportation_effect(copy_image, separation_width, sprite_data['tpfrom'])
 
             result_image = copy_image
-            result_image.save(f"output/img/modular_weapon/modular_focus_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
+            result_image.save(f"output/img/modular_weapon/{sprite_data['name']}_{str.lower(modules_data['main'][main_module]['name'])}_{str.lower(modules_data['second'][second_module]['name'])}.png")
 
-            generate_glow(data, modules_data, main_module, second_module)
+            if 'noglow' not in sprite_data:
+                generate_glow(data, modules_data, main_module, second_module)
+    
+    
+
+if __name__ == "__main__":
+
+    animation_xml = "<FTL>"
+
+    #with open('generation/json/weapon_pinpoint.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+
+    #with open('generation/json/weapon_bomb.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+
+    with open('generation/json/weapon_bombL.json') as json_file:
+        data = json.load(json_file)
+    generate(data, animation_xml)
     
     with open("output/data/animations.xml.append", "w") as xml_file:
         xml_file.write(animation_xml + "</FTL>")
-
-if __name__ == "__main__":
-    main()

@@ -1,5 +1,7 @@
 {
     "spriteData": {
+        "name": "focus/modular_focus",
+        "animation": "pinpoint",
         "base": {
             "path": "generation/layers/pinpoint/body.png",
             "multiplier": 9
