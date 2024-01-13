@@ -10,9 +10,14 @@ def generate_weapon_name(element, module_name, is_main_module, lower=False, subm
     else:
         element.set("name", f"{base_name}_BASE_{module_name}")
 
-def generate_weapon_image(element, name, main, name2=""):
-    elem = element.find("weaponArt")
+def generate_weapon_image(imgType, element, name, main, name2=""):
+    elem = element.find(imgType)
+    if elem is None:
+        return
+
     split = elem.text.split("_")
+    if split[-1] != "base":
+        return
 
     name = name.lower()
     name2 = name2.lower()
@@ -106,7 +111,8 @@ def create_module_weapon(json_data, module_name):
     generate_weapon_name(new_module_weapon, module_data["name"], is_main_module)
 
     add_to_desc(new_module_weapon, module_data["desc"])
-    generate_weapon_image(new_module_weapon, module_data["name"], is_main_module)
+    generate_weapon_image("weaponArt", new_module_weapon, module_data["name"], is_main_module)
+    generate_weapon_image("image", new_module_weapon, module_data["name"], is_main_module)
 
     module_data["bio"] = module_data["bio"] if "bio" in module_data else False
     if module_data["bio"]:
@@ -128,7 +134,8 @@ def create_two_module_weapon(json_data, main_module_data, sub_module_data):
         add_bio_stat_boosts(new_module_weapon)
 
     add_to_desc(new_module_weapon, main_module_data["desc"], sub_module_data["desc"])
-    generate_weapon_image(new_module_weapon, main_module_data["name"], False, sub_module_data["name"])
+    generate_weapon_image("weaponArt", new_module_weapon, main_module_data["name"], False, sub_module_data["name"])
+    generate_weapon_image("image", new_module_weapon, main_module_data["name"], False, sub_module_data["name"])
 
     to_be_removed = []
 

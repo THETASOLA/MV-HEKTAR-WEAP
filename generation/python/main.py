@@ -38,13 +38,13 @@ with open("generation/json/weapon_pinpoint.json", "r") as f:
 with open("generation/json/weapon_flak.json", "r") as f:
     json_data_weapon_flak = json.load(f)
 
-with open("generation/json/weapon_bomb.json", "r") as f:
+with open("generation/json/weapon_bombL.json", "r") as f:
     json_data_weapon_bomb = json.load(f)
 
 # -------------------------------------------------------------- WEAPON
-data_to_be_written += generate_weapon(json_data_weapon_pinpoint)
+#data_to_be_written += generate_weapon(json_data_weapon_pinpoint)
 #data_to_be_written += generate_weapon(json_data_weapon_flak)
-#data_to_be_written += generate_weapon(json_data_weapon_bomb)
+data_to_be_written += generate_weapon(json_data_weapon_bomb)
 
 with open("output/data/blueprints.xml.append", "w") as f:
     f.write(data_to_be_written)

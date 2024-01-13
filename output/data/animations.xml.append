@@ -1,1 +1,451 @@
-<FTL></FTL>
+<FTL>
+<animSheet name="modular_bomb_base_base_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_base_base.png</animSheet>
+<weaponAnim name="modular_bomb_base_base">
+	<sheet>modular_bomb_base_base_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_base_bio_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_base_bio.png</animSheet>
+<weaponAnim name="modular_bomb_base_bio">
+	<sheet>modular_bomb_base_bio_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_base_cooldown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_base_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_base_cooldown">
+	<sheet>modular_bomb_base_cooldown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_base_lockdown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_base_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_base_lockdown">
+	<sheet>modular_bomb_base_lockdown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_base_stun_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_base_stun.png</animSheet>
+<weaponAnim name="modular_bomb_base_stun">
+	<sheet>modular_bomb_base_stun_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_accuracy_base_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_accuracy_base.png</animSheet>
+<weaponAnim name="modular_bomb_accuracy_base">
+	<sheet>modular_bomb_accuracy_base_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_accuracy_bio_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_accuracy_bio.png</animSheet>
+<weaponAnim name="modular_bomb_accuracy_bio">
+	<sheet>modular_bomb_accuracy_bio_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_accuracy_cooldown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_accuracy_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_accuracy_cooldown">
+	<sheet>modular_bomb_accuracy_cooldown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_accuracy_lockdown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_accuracy_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_accuracy_lockdown">
+	<sheet>modular_bomb_accuracy_lockdown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_accuracy_stun_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_accuracy_stun.png</animSheet>
+<weaponAnim name="modular_bomb_accuracy_stun">
+	<sheet>modular_bomb_accuracy_stun_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_fire_base_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_fire_base.png</animSheet>
+<weaponAnim name="modular_bomb_fire_base">
+	<sheet>modular_bomb_fire_base_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_fire_bio_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_fire_bio.png</animSheet>
+<weaponAnim name="modular_bomb_fire_bio">
+	<sheet>modular_bomb_fire_bio_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_fire_cooldown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_fire_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_fire_cooldown">
+	<sheet>modular_bomb_fire_cooldown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_fire_lockdown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_fire_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_fire_lockdown">
+	<sheet>modular_bomb_fire_lockdown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_fire_stun_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_fire_stun.png</animSheet>
+<weaponAnim name="modular_bomb_fire_stun">
+	<sheet>modular_bomb_fire_stun_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_hull_base_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_hull_base.png</animSheet>
+<weaponAnim name="modular_bomb_hull_base">
+	<sheet>modular_bomb_hull_base_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_hull_bio_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_hull_bio.png</animSheet>
+<weaponAnim name="modular_bomb_hull_bio">
+	<sheet>modular_bomb_hull_bio_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_hull_cooldown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_hull_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_hull_cooldown">
+	<sheet>modular_bomb_hull_cooldown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_hull_lockdown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_hull_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_hull_lockdown">
+	<sheet>modular_bomb_hull_lockdown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_hull_stun_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_hull_stun.png</animSheet>
+<weaponAnim name="modular_bomb_hull_stun">
+	<sheet>modular_bomb_hull_stun_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_power_base_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_power_base.png</animSheet>
+<weaponAnim name="modular_bomb_power_base">
+	<sheet>modular_bomb_power_base_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_power_bio_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_power_bio.png</animSheet>
+<weaponAnim name="modular_bomb_power_bio">
+	<sheet>modular_bomb_power_bio_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_power_cooldown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_power_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_power_cooldown">
+	<sheet>modular_bomb_power_cooldown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_power_lockdown_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_power_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_power_lockdown">
+	<sheet>modular_bomb_power_lockdown_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_power_stun_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_power_stun.png</animSheet>
+<weaponAnim name="modular_bomb_power_stun">
+	<sheet>modular_bomb_power_stun_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_base_base_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_base_base.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_base_base">
+	<sheet>modular_bomb_launcher_base_base_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_base_base_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_base_bio_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_base_bio.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_base_bio">
+	<sheet>modular_bomb_launcher_base_bio_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_base_bio_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_base_cooldown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_base_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_base_cooldown">
+	<sheet>modular_bomb_launcher_base_cooldown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_base_cooldown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_base_lockdown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_base_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_base_lockdown">
+	<sheet>modular_bomb_launcher_base_lockdown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_base_lockdown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_base_stun_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_base_stun.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_base_stun">
+	<sheet>modular_bomb_launcher_base_stun_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_base_stun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_fire_base_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_fire_base.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_fire_base">
+	<sheet>modular_bomb_launcher_fire_base_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_fire_base_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_fire_bio_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_fire_bio.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_fire_bio">
+	<sheet>modular_bomb_launcher_fire_bio_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_fire_bio_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_fire_cooldown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_fire_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_fire_cooldown">
+	<sheet>modular_bomb_launcher_fire_cooldown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_fire_cooldown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_fire_lockdown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_fire_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_fire_lockdown">
+	<sheet>modular_bomb_launcher_fire_lockdown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_fire_lockdown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_fire_stun_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_fire_stun.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_fire_stun">
+	<sheet>modular_bomb_launcher_fire_stun_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_fire_stun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_accuracy_base_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_accuracy_base.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_accuracy_base">
+	<sheet>modular_bomb_launcher_accuracy_base_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_accuracy_base_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_accuracy_bio_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_accuracy_bio.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_accuracy_bio">
+	<sheet>modular_bomb_launcher_accuracy_bio_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_accuracy_bio_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_accuracy_cooldown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_accuracy_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_accuracy_cooldown">
+	<sheet>modular_bomb_launcher_accuracy_cooldown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_accuracy_cooldown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_accuracy_lockdown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_accuracy_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_accuracy_lockdown">
+	<sheet>modular_bomb_launcher_accuracy_lockdown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_accuracy_lockdown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_accuracy_stun_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_accuracy_stun.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_accuracy_stun">
+	<sheet>modular_bomb_launcher_accuracy_stun_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_accuracy_stun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_hull_base_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_hull_base.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_hull_base">
+	<sheet>modular_bomb_launcher_hull_base_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_hull_base_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_hull_bio_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_hull_bio.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_hull_bio">
+	<sheet>modular_bomb_launcher_hull_bio_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_hull_bio_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_hull_cooldown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_hull_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_hull_cooldown">
+	<sheet>modular_bomb_launcher_hull_cooldown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_hull_cooldown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_hull_lockdown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_hull_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_hull_lockdown">
+	<sheet>modular_bomb_launcher_hull_lockdown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_hull_lockdown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_hull_stun_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_hull_stun.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_hull_stun">
+	<sheet>modular_bomb_launcher_hull_stun_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_hull_stun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_power_base_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_power_base.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_power_base">
+	<sheet>modular_bomb_launcher_power_base_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_power_base_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_power_bio_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_power_bio.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_power_bio">
+	<sheet>modular_bomb_launcher_power_bio_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_power_bio_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_power_cooldown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_power_cooldown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_power_cooldown">
+	<sheet>modular_bomb_launcher_power_cooldown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_power_cooldown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_power_lockdown_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_power_lockdown.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_power_lockdown">
+	<sheet>modular_bomb_launcher_power_lockdown_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_power_lockdown_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_bomb_launcher_power_stun_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_power_stun.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_power_stun">
+	<sheet>modular_bomb_launcher_power_stun_s</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_power_stun_glow.png</chargeImage>
+</weaponAnim>
+</FTL>

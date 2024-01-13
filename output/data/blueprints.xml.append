@@ -1,91 +1,68 @@
-<weaponBlueprint name="MODULAR_FOCUS_BASE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Pinpoint. It supports 1 attribute module and 1 status module.
-Incompatible with the accuracy and lockdown module.</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+<weaponBlueprint name="MODULAR_BOMB_BASE">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Bomb. It supports 1 attribute module and 1 status module.
+Incompatible with the piercing module.</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_base</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_base</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_base</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_BASE_PIERCE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
-Has no incompatible modules.
-----CURRENTLY INSTALLED MODULES----
-Status - Pierce
-</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
-  <sp>1</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
-  <power>2</power>
-  <cost>65</cost>
-  <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
-  <length>1</length>
-  <launchSounds>
-    <sound>focus_weak</sound>
-  </launchSounds>
-  <weaponArt>modular_focus_base_pierce</weaponArt>
-  <iconImage>beam</iconImage>
-</weaponBlueprint>
-
-<weaponBlueprint name="MODULAR_FOCUS_BASE_BIO">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_BASE_BIO">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Bio
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_base_bio</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_base_bio</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_base_bio</weaponArt>
+  <iconImage>bomb</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -118,225 +95,289 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_BASE_COOLDOWN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_BASE_COOLDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Cooldown
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_base_cooldown</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_base_cooldown</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_base_cooldown</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_BASE_STUN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_BASE_LOCKDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Status - Lockdown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_base_lockdown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_base_lockdown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <lockdown>1</lockdown>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_BASE_STUN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Stun
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_base_stun</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_base_stun</weaponArt>
-  <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_base_stun</weaponArt>
+  <iconImage>bomb</iconImage>
+  <stun>20</stun>
+  <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_FIRE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_FIRE">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_fire_base</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_fire_base</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_fire_base</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_HULL">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_ACCURACY">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Accuracy
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_accuracy_base</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_accuracy_base</weaponArt>
+  <iconImage>bomb</iconImage>
+  <accuracyMod>20</accuracyMod>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_HULL">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>4</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>1</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>10</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_hull_base</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_hull_base</weaponArt>
-  <iconImage>beam</iconImage>
-  <hullBust>1</hullBust>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_hull_base</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_POWER">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_POWER">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>5</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>10</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_power_base</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_power_base</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_FIRE_PIERCE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
-Has no incompatible modules.
-----CURRENTLY INSTALLED MODULES----
-Attribute - Fire
-Status - Pierce
-</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
-  <sp>1</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
-  <power>2</power>
-  <cost>65</cost>
-  <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
-  <length>1</length>
-  <launchSounds>
-    <sound>focus_weak</sound>
-  </launchSounds>
-  <weaponArt>modular_focus_fire_pierce</weaponArt>
-  <iconImage>beam</iconImage>
-</weaponBlueprint>
-
-<weaponBlueprint name="MODULAR_FOCUS_FIRE_BIO">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_FIRE_BIO">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Bio
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_fire_bio</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_fire_bio</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_fire_bio</weaponArt>
+  <iconImage>bomb</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -369,134 +410,151 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_FIRE_COOLDOWN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_FIRE_COOLDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Cooldown
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
-  <speed>1</speed>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_fire_cooldown</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_fire_cooldown</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_fire_cooldown</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_FIRE_STUN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_FIRE_LOCKDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Fire
+Status - Lockdown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_fire_lockdown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_fire_lockdown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <lockdown>1</lockdown>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_FIRE_STUN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Stun
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>3</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_fire_stun</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_fire_stun</weaponArt>
-  <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_fire_stun</weaponArt>
+  <iconImage>bomb</iconImage>
+  <stun>20</stun>
+  <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_HULL_PIERCE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_ACCURACY_BIO">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
-Attribute - Hull
-Status - Pierce
-</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>4</damage>
-  <sp>1</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
-  <power>2</power>
-  <cost>65</cost>
-  <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
-  <length>1</length>
-  <launchSounds>
-    <sound>focus_weak</sound>
-  </launchSounds>
-  <weaponArt>modular_focus_hull_pierce</weaponArt>
-  <iconImage>beam</iconImage>
-  <hullBust>1</hullBust>
-</weaponBlueprint>
-
-<weaponBlueprint name="MODULAR_FOCUS_HULL_BIO">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
-Has no incompatible modules.
-----CURRENTLY INSTALLED MODULES----
-Attribute - Hull
+Attribute - Accuracy
 Status - Bio
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>4</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_accuracy_bio</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_hull_bio</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_accuracy_bio</weaponArt>
+  <iconImage>bomb</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -526,139 +584,158 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <hullBust>1</hullBust>
+  <accuracyMod>20</accuracyMod>
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_HULL_COOLDOWN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_ACCURACY_COOLDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
-Attribute - Hull
+Attribute - Accuracy
 Status - Cooldown
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>4</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_accuracy_cooldown</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_hull_cooldown</weaponArt>
-  <iconImage>beam</iconImage>
-  <hullBust>1</hullBust>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_accuracy_cooldown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <accuracyMod>20</accuracyMod>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_HULL_STUN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_ACCURACY_LOCKDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Accuracy
+Status - Lockdown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_accuracy_lockdown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_accuracy_lockdown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <accuracyMod>20</accuracyMod>
+  <lockdown>1</lockdown>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_ACCURACY_STUN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Accuracy
+Status - Stun
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>0</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_accuracy_stun</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_accuracy_stun</weaponArt>
+  <iconImage>bomb</iconImage>
+  <accuracyMod>20</accuracyMod>
+  <stun>20</stun>
+  <ion>6</ion>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_HULL_BIO">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
-Status - Stun
+Status - Bio
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>4</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>1</damage>
+  <sysDamage>4</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>10</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_hull_bio</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>modular_focus_hull_stun</weaponArt>
-  <iconImage>beam</iconImage>
-  <hullBust>1</hullBust>
-  <stun>25</stun>
-</weaponBlueprint>
-
-<weaponBlueprint name="MODULAR_FOCUS_POWER_PIERCE">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
-Has no incompatible modules.
-----CURRENTLY INSTALLED MODULES----
-Attribute - Power
-Status - Pierce
-</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>5</damage>
-  <sp>1</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
-  <power>3</power>
-  <cost>65</cost>
-  <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
-  <length>1</length>
-  <launchSounds>
-    <sound>focus_weak</sound>
-  </launchSounds>
-  <weaponArt>focus_2</weaponArt>
-  <iconImage>beam</iconImage>
-</weaponBlueprint>
-
-<weaponBlueprint name="MODULAR_FOCUS_POWER_BIO">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
-Has no incompatible modules.
-----CURRENTLY INSTALLED MODULES----
-Attribute - Power
-Status - Bio
-</desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>5</damage>
-  <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
-  <power>3</power>
-  <cost>65</cost>
-  <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
-  <length>1</length>
-  <launchSounds>
-    <sound>focus_weak</sound>
-  </launchSounds>
-  <weaponArt>focus_2</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_hull_bio</weaponArt>
+  <iconImage>bomb</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -691,68 +768,291 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_POWER_COOLDOWN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_HULL_COOLDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Hull
+Status - Cooldown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>1</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>10</breachChance>
+  <missiles>1</missiles>
+  <cooldown>12</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_hull_cooldown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_hull_cooldown</weaponArt>
+  <iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_HULL_LOCKDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Hull
+Status - Lockdown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>1</damage>
+  <sysDamage>4</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>10</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_hull_lockdown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_hull_lockdown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <lockdown>1</lockdown>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_HULL_STUN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Hull
+Status - Stun
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>10</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_hull_stun</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_hull_stun</weaponArt>
+  <iconImage>bomb</iconImage>
+  <stun>20</stun>
+  <ion>6</ion>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_POWER_BIO">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Power
+Status - Bio
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>10</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>3</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_power_bio</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_power_bio</weaponArt>
+  <iconImage>bomb</iconImage>
+  <statBoosts>
+    <statBoost name="moveSpeedMultiplier">
+      <boostType>MULT</boostType>
+      <amount>0.33</amount>
+      <shipTarget>ALL</shipTarget>
+      <crewTarget>ALL</crewTarget>
+      <affectsSelf>true</affectsSelf>
+      <maxStacks>1</maxStacks>
+      <duration>10</duration>
+    </statBoost>
+    <statBoost name="stunMultiplier">
+      <boostType>MULT</boostType>
+      <amount>1.75</amount>
+      <shipTarget>ALL</shipTarget>
+      <crewTarget>ALL</crewTarget>
+      <affectsSelf>true</affectsSelf>
+      <maxStacks>1</maxStacks>
+      <duration>10</duration>
+    </statBoost>
+    <statBoost name="repairSpeed">
+      <boostType>MULT</boostType>
+      <amount>0.33</amount>
+      <shipTarget>ALL</shipTarget>
+      <crewTarget>ALL</crewTarget>
+      <affectsSelf>true</affectsSelf>
+      <maxStacks>1</maxStacks>
+      <duration>10</duration>
+    </statBoost>
+  </statBoosts>
+  <persDamage>6</persDamage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_POWER_COOLDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Cooldown
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>5</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>10</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_power_cooldown</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
-  <iconImage>beam</iconImage>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_power_cooldown</weaponArt>
+  <iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_FOCUS_POWER_STUN">
-  <type>BEAM</type>
-  <flavorType>Pinpoint</flavorType>
-  <title>Modular Pinpoint</title>
-  <tip>tip_focus</tip>
+<weaponBlueprint name="MODULAR_BOMB_POWER_LOCKDOWN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Power
+Status - Lockdown
+</desc>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>10</sysDamage>
+  <sp>0</sp>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
+  <power>3</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <image>modular_bomb_power_lockdown</image>
+  <length>1</length>
+  <explosion>explosion_random</explosion>
+  <launchSounds>
+    <sound>bombTeleport</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_power_lockdown</weaponArt>
+  <iconImage>bomb</iconImage>
+  <lockdown>1</lockdown>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_BOMB_POWER_STUN">
+  <type>BOMB</type>
+  <title>Modular Bomb</title>
+  <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Stun
 </desc>
-  <short>M. Pinpoint</short>
-  <tooltip>One damage per room beam weapon</tooltip>
-  <damage>5</damage>
+  <short>M. Bomb</short>
+  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <damage>0</damage>
+  <sysDamage>6</sysDamage>
   <sp>0</sp>
-  <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
-  <cooldown>16</cooldown>
-  <speed>1</speed>
+  <fireChance>1</fireChance>
+  <breachChance>1</breachChance>
+  <missiles>1</missiles>
+  <cooldown>15</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
-  <image>beam_contact</image>
+  <rarity>0</rarity>
+  <image>modular_bomb_power_stun</image>
   <length>1</length>
+  <explosion>explosion_random</explosion>
   <launchSounds>
-    <sound>focus_weak</sound>
+    <sound>bombTeleport</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
-  <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <hitShipSounds>
+    <sound>smallExplosion</sound>
+  </hitShipSounds>
+  <weaponArt>modular_bomb_launcher_power_stun</weaponArt>
+  <iconImage>bomb</iconImage>
+  <stun>20</stun>
+  <ion>6</ion>
 </weaponBlueprint>
 

@@ -204,15 +204,15 @@ def generate_animation_data_bombL(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
-<weaponAnim name="modular_focus_{name}">
-	<sheet>modular_focus_{name}_s</sheet>
-	<desc length="9" x="0" y="0"/>
+<animSheet name="modular_bomb_launcher_{name}_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_{name}.png</animSheet>
+<weaponAnim name="modular_bomb_launcher_{name}">
+	<sheet>modular_bomb_launcher_{name}_s</sheet>
+	<desc length="14" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="22" y="27"/>
+	<mountPoint x="6" y="40"/>
+	<chargeImage>weapon_bomb/modular_bomb_launcher_{name}_glow.png</chargeImage>
 </weaponAnim>
 """
 
@@ -222,15 +222,11 @@ def generate_animation_data_bomb(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
-<weaponAnim name="modular_focus_{name}">
-	<sheet>modular_focus_{name}_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+<animSheet name="modular_bomb_{name}_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_{name}.png</animSheet>
+<weaponAnim name="modular_bomb_{name}">
+	<sheet>modular_bomb_{name}_s</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
 </weaponAnim>
 """
 
@@ -292,7 +288,7 @@ def generate(data, animation_xml):
             copy_image = base_image.copy()
             
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
-            animation_xml = animation_data[sprite_data['animation']](animation_xml, f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
+            animation_xml[0] = animation_data[sprite_data['animation']](animation_xml[0], f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
 
             if 'tpfrom' in sprite_data:
                 teleportation_effect(copy_image, separation_width, sprite_data['tpfrom'])
@@ -307,19 +303,20 @@ def generate(data, animation_xml):
 
 if __name__ == "__main__":
 
-    animation_xml = "<FTL>"
+    animation_xml = [""]
+    animation_xml[0] = "<FTL>"
 
     #with open('generation/json/weapon_pinpoint.json') as json_file:
     #    data = json.load(json_file)
     #generate(data, animation_xml)
 
-    #with open('generation/json/weapon_bomb.json') as json_file:
-    #    data = json.load(json_file)
-    #generate(data, animation_xml)
+    with open('generation/json/weapon_bomb.json') as json_file:
+        data = json.load(json_file)
+    generate(data, animation_xml)
 
     with open('generation/json/weapon_bombL.json') as json_file:
         data = json.load(json_file)
     generate(data, animation_xml)
     
     with open("output/data/animations.xml.append", "w") as xml_file:
-        xml_file.write(animation_xml + "</FTL>")
+        xml_file.write(animation_xml[0] + "</FTL>")

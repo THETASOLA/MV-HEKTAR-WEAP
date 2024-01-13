@@ -1,20 +1,110 @@
 {
     "spriteData": {
-        "name": "bomb/bomb",
-        "animation": "bomb",
-        "noglow": true,
-        "tpfrom": 11,
+        "name": "bomb/modular_bomb_launcher",
+        "animation": "bomb_launcher",
         "base": {
-            "path": "generation/layers/bomb/bombBody.png",
-            "multiplier": 15
+            "path": "generation/layers/bomb/body.png",
+            "multiplier": 14
         },
         "layers": [
             {
                 "name": "glow",
-                "path": "generation/layers/bomb/bombGlow.png",
-                "positions": [1,3,5,7,9]
+                "path": "generation/layers/bomb/glow.png",
+                "positions": []
+            },
+
+            {
+                "name": "Larm",
+                "path": "generation/layers/bomb/LArm.png",
+                "positionsStart": 1,
+                "movement": [
+                    [[3,14], [1,0]],
+                    [[4,13], [2,0]],
+                    [[5,6,7,8,9,10,11,12], [3,0]]
+                ]
+            },
+
+            {
+                "name": "Rarm",
+                "path": "generation/layers/bomb/RArm.png",
+                "positionsStart": 1,
+                "movement": [
+                    [[3,14], [-1,0]],
+                    [[4,13], [-2,0]],
+                    [[5,6,7,8,9,10,11,12], [-3,0]]
+                ]
+            },
+
+            {
+                "name": "Lon",
+                "path": "generation/layers/bomb/Lon.png",
+                "positions": [2,3,4,5,6,7,8,9,10,11,12],
+                "movement": [
+                    [[3,14], [1,0]],
+                    [[4,13], [2,0]],
+                    [[5,6,7,8,9,10,11,12], [3,0]]
+                ]
+            },
+
+            {
+                "name": "Ron",
+                "path": "generation/layers/bomb/Ron.png",
+                "positions": [2,3,4,5,6,7,8,9,10,11,12],
+                "movement": [
+                    [[3,14], [-1,0]],
+                    [[4,13], [-2,0]],
+                    [[5,6,7,8,9,10,11,12], [-3,0]]
+                ]
+            },
+
+            {
+                "name": "firing",
+                "path": "generation/layers/bomb/firingGlow.png",
+                "positions": [5,6,7,8,9,10,11,12],
+                "movement": [
+                    [[6], [0,3]],
+                    [[7], [0,5]],
+                    [[8], [0,8]],
+                    [[9], [0,11]],
+                    [[10], [0,14]],
+                    [[11], [0,17]],
+                    [[12], [0,20]]
+                ]
             }
+
         ]
+    },
+
+    "weaponBlueprint": {
+        "@name": "MODULAR_BOMB",
+        "type": "BOMB",
+        "title": "Modular Bomb",
+        "tip": "tip_bombs",
+        "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Bomb. It supports 1 attribute module and 1 status module.\nIncompatible with the piercing module.",
+        "short": "M. Bomb",
+        "tooltip": "Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.",
+        "damage": "0",
+        "sysDamage": "4",
+        "sp": "0",
+        "fireChance": "1",
+        "breachChance": "1",
+        "missiles": "1",
+        "cooldown": "15",
+        "power": "2",
+        "cost": "65",
+        "bp": "2",
+        "rarity": "0",
+        "image": "modular_bomb_base",
+        "length": "1",
+        "explosion": "explosion_random",
+        "launchSounds": {
+            "sound": "bombTeleport"
+        },
+        "hitShipSounds": {
+            "sound": "smallExplosion"
+        },
+        "weaponArt": "modular_bomb_launcher_base",
+        "iconImage": "bomb"
     },
 
     "modules": {
@@ -22,36 +112,113 @@
         "moduleBio": {
             "name": "BIO",
             "main": false,
-
+            "desc": "Status - Bio",
+            "modName": "Anti-Bio Module",
+            "bio": true,
+            "stats":{
+                "persDamage": "6"
+            },
             "sprite":{
-                "glow": "generation/layers/bomb/bombBioGlow.png"
+                "addmodule": "generation/layers/bomb/bio.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/bioOn.png"]
             }
         },
 
         "moduleCooldown": {
             "name": "COOLDOWN",
             "main": false,
-
+            "desc": "Status - Cooldown",
+            "modName": "Cooldown Module",
+            "stats":{
+                "cooldown": "12"
+            },
             "sprite":{
-                "glow": "generation/layers/bomb/bombCooldownGlow.png"
+                "addmodule": "generation/layers/bomb/cooldown.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/cooldownOn.png"]
             }
         },
 
         "moduleLockdown": {
             "name": "LOCKDOWN",
             "main": false,
-
+            "desc": "Status - Lockdown",
+            "modName": "Lockdown Module",
+            "stats":{
+                "lockdown": "1"
+            },
             "sprite":{
-                "glow": "generation/layers/bomb/bombLockdownGlow.png"
+                "addmodule": "generation/layers/bomb/lockdown.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/lockdownOn.png"]
             }
         },
 
         "moduleStun": {
             "name": "STUN",
             "main": false,
-
+            "desc": "Status - Stun",
+            "modName": "Stun Module",
+            "stats":{
+                "stun": "20",
+                "ion": "6",
+                "sysDamage": "0"
+            },
             "sprite":{
-                "glow": "generation/layers/bomb/bombStunGlow.png"
+                "addmodule": "generation/layers/bomb/stun.png",
+                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/stunOn.png"]
+            }
+        },
+
+        "moduleFire": {
+            "name": "FIRE",
+            "main": true,
+            "desc": "Attribute - Fire",
+            "modName": "Fire Module",
+            "stats":{
+                "fireChance": "10"
+            },
+            "sprite":{
+                "add": "generation/layers/bomb/fire.png"
+            }
+        },
+
+        "moduleAccuracy": {
+            "name": "ACCURACY",
+            "main": true,
+            "desc": "Attribute - Accuracy",
+            "modName": "Accuracy Module",
+            "stats":{
+                "accuracyMod": "20"
+            },
+            "sprite":{
+                "add": "generation/layers/bomb/accuracy.png"
+            }
+        },
+        
+        "moduleHull": {
+            "name": "HULL",
+            "main": true,
+            "desc": "Attribute - Hull",
+            "modName": "Hull Module",
+            "stats":{
+                "breachChance": "10",
+                "damage": "1"
+            },
+            "sprite":{
+                "add": "generation/layers/bomb/hull.png"
+            }
+        },
+
+        "modulePower": {
+            "name": "POWER",
+            "main": true,
+            "desc": "Attribute - Power",
+            "modName": "Power Module",
+            "stats":{
+                "power": "3",
+                "sysDamage": "10"
+            },
+            "sprite":{
+                "add": "generation/layers/bomb/power.png"
             }
         }
     }
