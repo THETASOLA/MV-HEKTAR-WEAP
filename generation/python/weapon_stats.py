@@ -51,13 +51,26 @@ def add_bio_stat_boosts(element):
             prop_element = etree.SubElement(stat_boost_element, prop_name)
             prop_element.text = prop_value
 
+def add_projectiles(element, count, fake, value):
+    root = etree.SubElement(element, "projectiles")
+    projectile = etree.SubElement(root, "projectile", count=str(count), fake=str(fake).lower())
+    projectile.text = value
+
 def add_module_value(element, module_name, value):
     module_element = element.find(module_name)
-
     if module_element is None:
         module_element = etree.SubElement(element, module_name)
 
-    module_element.text = value
+    if isinstance(value, list):
+        module_element = module_element.find(value[0])
+        value = value[1]
+        for item in value:
+            if isinstance(item, list):
+                module_element.set(item[0], item[1])
+            else:
+                module_element.text = item
+    else:
+        module_element.text = value
 
 def add_to_desc(element, main_text, additional_text=""):
     if additional_text:
@@ -89,6 +102,9 @@ def create_new_weapon(json_data):
                 else:
                     inner_element.text = value[inner_key]
         elif isinstance(value, list):
+            if key == "projectiles":
+                add_projectiles(new_weapon_element, value[0], value[1], value[2])
+                continue
             for item in value:
                 outer_element = etree.SubElement(new_weapon_element, key)
                 outer_element.text = item

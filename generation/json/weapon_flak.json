@@ -7,6 +7,18 @@
             "multiplier": 9
         },
         "layers": [
+
+            {
+                "name": "glow",
+                "path": "generation/layers/flak/glow.png",
+                "positions": [2,3,4,5,6]
+            },
+
+            {
+                "name": "secondGlow",
+                "path": "generation/layers/flak/secondGlow.png",
+                "positions": [2,3,4,5,6]
+            },
             
             {
                 "name": "piston",
@@ -32,19 +44,9 @@
                     [[5, 7], [-3,0]],
                     [[6], [-4,0]]
                 ]
-            },
-
-            {
-                "name": "glow",
-                "path": "generation/layers/flak/glow.png",
-                "positions": [2,3,4,5,6]
-            },
-
-            {
-                "name": "secondGlow",
-                "path": "generation/layers/flak/secondGlow.png",
-                "positions": [2,3,4,5,6]
             }
+
+            
         ]
     },
 
@@ -71,9 +73,7 @@
         "bp": "2",
         "rarity": "0",
         "speed": "28",
-        "projectiles": {
-            "projectiles": "debris_med"
-        },
+        "projectiles": [3, false, "debris_med"],
         "launchSounds": {
             "sound": "flak"
         },
@@ -216,7 +216,7 @@
             "modName": "Power Module",
             "stats":{
                 "power": "3",
-                "sysDamage": "10"
+                "projectiles": ["projectile", [["count", "5"], ["fake", "false"], "debris_med"]]
             },
             "sprite":{
                 "add": "generation/layers/flak/power.png"

@@ -1,68 +1,148 @@
-<weaponBlueprint name="MODULAR_BOMB_BASE">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
-  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Bomb. It supports 1 attribute module and 1 status module.
-Incompatible with the piercing module.</desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Flak. It supports 1 attribute module and 1 status module.
+Has no incompatibilities.</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_BASE_BIO">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE_PIERCE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Status - Pierce
+</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>1</sp>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
+  <breachChance>1</breachChance>
+  <cooldown>12</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
+  <launchSounds>
+    <sound>flak</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
+  </hitShipSounds>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base_pierce</weaponArt>
+  <iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE_BIO">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Bio
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base_bio</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base_bio</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base_bio</weaponArt>
+  <iconImage>flak</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -95,289 +175,460 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_BASE_COOLDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE_COOLDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Cooldown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base_cooldown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base_cooldown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base_cooldown</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_BASE_LOCKDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE_LOCKDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Lockdown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base_lockdown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base_lockdown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base_lockdown</weaponArt>
+  <iconImage>flak</iconImage>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_BASE_STUN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_BASE_STUN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Stun
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
   <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base_stun</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base_stun</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_base_stun</weaponArt>
+  <iconImage>flak</iconImage>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_FIRE">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <spin>720</spin>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_fire_base</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_fire_base</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_base</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_ACCURACY">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_accuracy_base</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_accuracy_base</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_base</weaponArt>
+  <iconImage>flak</iconImage>
   <accuracyMod>20</accuracyMod>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_HULL">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
   <damage>1</damage>
-  <sysDamage>4</sysDamage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>10</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_hull_base</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_hull_base</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_base</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_POWER">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>10</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_power_base</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_power_base</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_base</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_FIRE_BIO">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE_PIERCE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Fire
+Status - Pierce
+</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>1</sp>
+  <spin>720</spin>
+  <fireChance>10</fireChance>
+  <breachChance>1</breachChance>
+  <cooldown>12</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
+  <launchSounds>
+    <sound>flak</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
+  </hitShipSounds>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_pierce</weaponArt>
+  <iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE_BIO">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Bio
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <spin>720</spin>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_fire_bio</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_fire_bio</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_bio</weaponArt>
+  <iconImage>flak</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -410,151 +661,263 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_FIRE_COOLDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE_COOLDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Cooldown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <spin>720</spin>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_fire_cooldown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_fire_cooldown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_cooldown</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_FIRE_LOCKDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE_LOCKDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Lockdown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <spin>720</spin>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_fire_lockdown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_fire_lockdown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_lockdown</weaponArt>
+  <iconImage>flak</iconImage>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_FIRE_STUN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_FIRE_STUN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 Status - Stun
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
   <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <spin>720</spin>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_fire_stun</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_fire_stun</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_fire_stun</weaponArt>
+  <iconImage>flak</iconImage>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_ACCURACY_BIO">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_PIERCE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Accuracy
+Status - Pierce
+</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>1</sp>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
+  <breachChance>1</breachChance>
+  <cooldown>12</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
+  <launchSounds>
+    <sound>flak</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
+  </hitShipSounds>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_pierce</weaponArt>
+  <iconImage>flak</iconImage>
+  <accuracyMod>20</accuracyMod>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_BIO">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 Status - Bio
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_accuracy_bio</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_accuracy_bio</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_bio</weaponArt>
+  <iconImage>flak</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -588,154 +951,265 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_ACCURACY_COOLDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 Status - Cooldown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_accuracy_cooldown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_accuracy_cooldown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_cooldown</weaponArt>
+  <iconImage>flak</iconImage>
   <accuracyMod>20</accuracyMod>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_ACCURACY_LOCKDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 Status - Lockdown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>4</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_accuracy_lockdown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_accuracy_lockdown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_lockdown</weaponArt>
+  <iconImage>flak</iconImage>
   <accuracyMod>20</accuracyMod>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_ACCURACY_STUN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_STUN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 Status - Stun
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
   <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_accuracy_stun</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_accuracy_stun</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_accuracy_stun</weaponArt>
+  <iconImage>flak</iconImage>
   <accuracyMod>20</accuracyMod>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_HULL_BIO">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL_PIERCE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Hull
+Status - Pierce
+</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>1</sp>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
+  <breachChance>10</breachChance>
+  <cooldown>12</cooldown>
+  <power>2</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
+  <launchSounds>
+    <sound>flak</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
+  </hitShipSounds>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_pierce</weaponArt>
+  <iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL_BIO">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 Status - Bio
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
   <damage>1</damage>
-  <sysDamage>4</sysDamage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>10</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_hull_bio</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_hull_bio</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_bio</weaponArt>
+  <iconImage>flak</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -768,151 +1242,262 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_HULL_COOLDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL_COOLDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 Status - Cooldown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
   <damage>1</damage>
-  <sysDamage>4</sysDamage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>10</breachChance>
-  <missiles>1</missiles>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_hull_cooldown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_hull_cooldown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_cooldown</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_HULL_LOCKDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL_LOCKDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 Status - Lockdown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
   <damage>1</damage>
-  <sysDamage>4</sysDamage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>10</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_hull_lockdown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_hull_lockdown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_lockdown</weaponArt>
+  <iconImage>flak</iconImage>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_HULL_STUN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_HULL_STUN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 Status - Stun
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>10</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_hull_stun</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="3" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_hull_stun</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_hull_stun</weaponArt>
+  <iconImage>flak</iconImage>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_POWER_BIO">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER_PIERCE">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
+  <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
+Has no incompatible modules.
+----CURRENTLY INSTALLED MODULES----
+Attribute - Power
+Status - Pierce
+</desc>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
+  <sp>1</sp>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
+  <breachChance>1</breachChance>
+  <cooldown>12</cooldown>
+  <power>3</power>
+  <cost>65</cost>
+  <bp>2</bp>
+  <rarity>0</rarity>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
+  <launchSounds>
+    <sound>flak</sound>
+  </launchSounds>
+  <hitShipSounds>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
+  </hitShipSounds>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_pierce</weaponArt>
+  <iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER_BIO">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Bio
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>10</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_power_bio</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_power_bio</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_bio</weaponArt>
+  <iconImage>flak</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
       <boostType>MULT</boostType>
@@ -945,113 +1530,158 @@ Status - Bio
   <persDamage>6</persDamage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_POWER_COOLDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER_COOLDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Cooldown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>10</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
   <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_power_cooldown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_power_cooldown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_cooldown</weaponArt>
+  <iconImage>flak</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_POWER_LOCKDOWN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER_LOCKDOWN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Lockdown
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>10</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_power_lockdown</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_power_lockdown</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_lockdown</weaponArt>
+  <iconImage>flak</iconImage>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_BOMB_POWER_STUN">
-  <type>BOMB</type>
-  <title>Modular Bomb</title>
-  <tip>tip_bombs</tip>
+<weaponBlueprint name="MODULAR_SHOTGUN_POWER_STUN">
+  <flavorType>Physical Projectile Blast</flavorType>
+  <type>BURST</type>
+  <title>Modular Flak</title>
+  <tip>tip_flaks</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 Status - Stun
 </desc>
-  <short>M. Bomb</short>
-  <tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-  <damage>0</damage>
-  <sysDamage>6</sysDamage>
+  <short>M. Flak</short>
+  <drone_targetable>1</drone_targetable>
+  <radius>42</radius>
+  <shots>1</shots>
+  <damage>1</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>1</fireChance>
+  <spin>720</spin>
+  <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>12</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_power_stun</image>
-  <length>1</length>
-  <explosion>explosion_random</explosion>
+  <speed>28</speed>
+  <projectiles>
+    <projectile count="4" fake="false">debris_med</projectile>
+  </projectiles>
   <launchSounds>
-    <sound>bombTeleport</sound>
+    <sound>flak</sound>
   </launchSounds>
   <hitShipSounds>
-    <sound>smallExplosion</sound>
+    <sound>flakImpact1</sound>
+    <sound>flakImpact2</sound>
+    <sound>flakImpact3</sound>
+    <sound>flakImpact4</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_power_stun</weaponArt>
-  <iconImage>bomb</iconImage>
+  <hitShieldSounds>
+    <sound>hitShield1</sound>
+    <sound>hitShield2</sound>
+    <sound>hitShield3</sound>
+  </hitShieldSounds>
+  <missSounds>
+    <sound>miss</sound>
+  </missSounds>
+  <weaponArt>modular_shotgun_power_stun</weaponArt>
+  <iconImage>flak</iconImage>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>

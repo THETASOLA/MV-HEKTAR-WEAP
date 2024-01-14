@@ -44,8 +44,12 @@ def remove_percentage(image, percentage, position):
 def process_sprite_data(data, base_image, sprite_dict, used_layer_names, separation_width):
     if 'sprite' in sprite_dict:
         for key in sprite_dict['sprite'].keys():
+            for layers in data['spriteData']['layers']:
+                if layers['name'] == key:
+                    used_layer_names.add(key)
             if key in used_layer_names:
                 continue
+            
 
             path = sprite_dict['sprite'][key]
             sprite_range = range(data['spriteData']['base']['multiplier'] + 1)
@@ -140,7 +144,6 @@ def delete_below_pixels(base_image, layer_image, movData=None, position=None):
 
             if base_image.getpixel((x, y))[3] != 0:
                 layer_image.putpixel((posX, posY), (0, 0, 0, 0))
-
 
 def add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage=None):
     for i in positions:
