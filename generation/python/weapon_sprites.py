@@ -122,11 +122,32 @@ def teleportation_effect(image, separation_width, movData):
                         )
             count = (count + 1)%(nDisplaced*2)
                 
+def delete_below_pixels(base_image, layer_image, movData=None, position=None):
+    base_image = Image.open(base_image).convert("RGBA")
+    width, height = base_image.size
+    
+    for y in range(height):
+        for x in range(width):
+            
+            posX = x
+            posY = y
+
+            if movData:
+                for set in movData:
+                    if position in set[0]:
+                        posX -= set[1][0]
+                        posY -= set[1][1]
+
+            if base_image.getpixel((x, y))[3] != 0:
+                layer_image.putpixel((posX, posY), (0, 0, 0, 0))
+
 
 def add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage=None):
     for i in positions:
         layer_image = Image.open(layer_path)
         position = find_translate(i, separation_width, layer_config.get('movement', None))
+        if 'below' in layer_config:
+            delete_below_pixels(data['spriteData']['base']['path'], layer_image, layer_config.get('movement', None), i)
         add_layer(base_image, layer_image, position)
 
     positions_start = layer_config.get('positionsStart', None)
@@ -139,6 +160,8 @@ def add_layers_with_positions(data, base_image, layer_path, positions, separatio
                 layer_image = remove_percentage(layer_image, percentage, i - 4)
 
             position = find_translate(i, separation_width, layer_config.get('movement', None))
+            if 'below' in layer_config:
+                delete_below_pixels(data['spriteData']['base']['path'], layer_image, layer_config.get('movement', None), i)
             add_layer(base_image, layer_image, position)
 
 def handle_layer_addition(base_image, data, separation_width, main, second):
@@ -204,7 +227,7 @@ def generate_animation_data_bombL(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_bomb_launcher_{name}_s" w="952" h="132" fw="37" fh="132">modular_weapon/modular_bomb_launcher_{name}.png</animSheet>
+<animSheet name="modular_bomb_launcher_{name}_s" w="518" h="65" fw="37" fh="65">modular_weapon/modular_bomb_launcher_{name}.png</animSheet>
 <weaponAnim name="modular_bomb_launcher_{name}">
 	<sheet>modular_bomb_launcher_{name}_s</sheet>
 	<desc length="14" x="0" y="0"/>
@@ -223,11 +246,11 @@ def generate_animation_data_bomb(xml, name):
 
     xml += f"""
 <animSheet name="modular_bomb_{name}_s" w="930" h="62" fw="62" fh="62">modular_weapon/modular_bomb_{name}.png</animSheet>
-<weaponAnim name="modular_bomb_{name}">
+<anim name="modular_bomb_{name}">
 	<sheet>modular_bomb_{name}_s</sheet>
 	<desc length="15" x="0" y="0"/>
 	<time>1.0</time>
-</weaponAnim>
+</anim>
 """
 
     return xml
@@ -236,15 +259,15 @@ def generate_animation_data_flak(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_focus_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_focus_{name}.png</animSheet>
-<weaponAnim name="modular_focus_{name}">
-	<sheet>modular_focus_{name}_s</sheet>
+<animSheet name="modular_shotgun_{name}_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_{name}.png</animSheet>
+<weaponAnim name="modular_shotgun_{name}">
+	<sheet>modular_shotgun_{name}_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="38"/>
 	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_focus_{name}_glow.png</chargeImage>
+	<chargeImage>weapon_focus/modular_shotgun_{name}_glow.png</chargeImage>
 </weaponAnim>
 """
 
@@ -310,11 +333,15 @@ if __name__ == "__main__":
     #    data = json.load(json_file)
     #generate(data, animation_xml)
 
-    with open('generation/json/weapon_bomb.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
+    #with open('generation/json/weapon_bomb.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
 
-    with open('generation/json/weapon_bombL.json') as json_file:
+    #with open('generation/json/weapon_bombL.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+
+    with open('generation/json/weapon_flak.json') as json_file:
         data = json.load(json_file)
     generate(data, animation_xml)
     

@@ -1,25 +1,84 @@
 {
+    "spriteData": {
+        "name": "flak/modular_shotgun",
+        "animation": "flak",
+        "base": {
+            "path": "generation/layers/flak/body.png",
+            "multiplier": 9
+        },
+        "layers": [
+            
+            {
+                "name": "piston",
+                "path": "generation/layers/flak/piston.png",
+                "positionsStart": 1,
+                "below": true,
+                "movement": [
+                    [[3, 9], [-1,0]],
+                    [[4, 8], [-2,0]],
+                    [[5, 7], [-3,0]],
+                    [[6], [-4,0]]
+                ]
+            },
+
+            {
+                "name": "pistonGlow",
+                "path": "generation/layers/flak/pistonGlow.png",
+                "positions": [2,3,4,5,6],
+                "below": true,
+                "movement": [
+                    [[3, 9], [-1,0]],
+                    [[4, 8], [-2,0]],
+                    [[5, 7], [-3,0]],
+                    [[6], [-4,0]]
+                ]
+            },
+
+            {
+                "name": "glow",
+                "path": "generation/layers/flak/glow.png",
+                "positions": [2,3,4,5,6]
+            },
+
+            {
+                "name": "secondGlow",
+                "path": "generation/layers/flak/secondGlow.png",
+                "positions": [2,3,4,5,6]
+            }
+        ]
+    },
+
     "weaponBlueprint": {
-        "@name": "MODULAR_DRONE_WEAPON_LASER",
-        "type": "LASER",
-        "title": "Drone Laser",
-        "damage": "1",
+        "@name": "MODULAR_SHOTGUN",
+        "flavorType": "Physical Projectile Blast",
+        "type": "BURST",
+        "title": "Modular Flak",
+        "tip": "tip_flaks",
+        "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Flak. It supports 1 attribute module and 1 status module.\nHas no incompatibilities.",
+        "short": "M. Flak",
+        "drone_targetable": "1",
+        "radius": "42",
         "shots": "1",
-        "accuracyMod": "0",
-        "persDamage": "0",
-        "hullBust": "0",
-        "lockdown": "0",
-        "stun": "0",
+        "damage": "1",
+        "sysDamage": "0",
         "sp": "0",
+        "spin": "720",
         "fireChance": "0",
-        "breachChance": "0",
+        "breachChance": "1",
+        "cooldown": "12",
+        "power": "2",
+        "cost": "65",
+        "bp": "2",
         "rarity": "0",
-        "image": "laser_light",
+        "speed": "28",
+        "projectiles": {
+            "projectiles": "debris_med"
+        },
         "launchSounds": {
-            "sound": "laser_piece"
+            "sound": "flak"
         },
         "hitShipSounds": {
-            "sound": ["hitHull2", "hitHull3"]
+            "sound": ["flakImpact1", "flakImpact2", "flakImpact3", "flakImpact4"]
         },
         "hitShieldSounds": {
             "sound": ["hitShield1", "hitShield2", "hitShield3"]
@@ -27,76 +86,141 @@
         "missSounds": {
             "sound": "miss"
         },
-        "weaponArt": "laser_piece"
+        "weaponArt": "modular_shotgun_base",
+        "iconImage": "flak"
     },
 
-    "modulePierce": {
-        "name": "PIERCE",
-        "main": false,
-        "stats":{
-            "sp": "1",
-            "breachChance": "3"
-        }
-    },
+    "modules": {
 
-    "moduleBio": {
-        "name": "BIO",
-        "main": false,
-        "bio": true,
-        "stats":{
-            "damage": "0",
-            "sysDamage": "1",
-            "persDamage": "4",
-            "sp": "1"
-        }
-    },
-    
-    "moduleLockdown": {
-        "name": "LOCKDOWN",
-        "main": false,
-        "stats":{
-            "lockdown": "1"
-        }
-    },
+        "modulePierce": {
+            "name": "PIERCE",
+            "main": false,
+            "desc": "Status - Pierce",
+            "modName": "Pierce Module",
+            "stats":{
+                "sp": "1"
+            },
+            "sprite":{
+                "add": "generation/layers/flak/pierce.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/pinpoint/pierceOn.png"]
+            }
+        },
 
-    "moduleStun": {
-        "name": "STUN",
-        "main": false,
-        "stats":{
-            "stun": "12"
-        }
-    },
+        "moduleBio": {
+            "name": "BIO",
+            "main": false,
+            "desc": "Status - Bio",
+            "modName": "Anti-Bio Module",
+            "bio": true,
+            "stats":{
+                "persDamage": "6"
+            },
+            "sprite":{
+                "addmodule": "generation/layers/flak/bio.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/bioOn.png"],
+                "glow": "generation/layers/flak/bioGlow.png"
+            }
+        },
 
-    "moduleAccuracy": {
-        "name": "ACCURACY",
-        "main": true,
-        "stats":{
-            "accuracyMod": "20"
-        }
-    },
+        "moduleCooldown": {
+            "name": "COOLDOWN",
+            "main": false,
+            "desc": "Status - Cooldown",
+            "modName": "Cooldown Module",
+            "stats":{
+                "cooldown": "12"
+            },
+            "sprite":{
+                "addmodule": "generation/layers/flak/cooldown.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/cooldownOn.png"]
+            }
+        },
 
-    "moduleFire": {
-        "name": "FIRE",
-        "main": true,
-        "stats":{
-            "fireChance": "3"
-        }
-    },
-    
-    "moduleHull": {
-        "name": "HULL",
-        "main": true,
-        "stats":{
-            "hullBust": "1",
-            "breachChance": "2"
-        }
-    },
+        "moduleLockdown": {
+            "name": "LOCKDOWN",
+            "main": false,
+            "desc": "Status - Lockdown",
+            "modName": "Lockdown Module",
+            "stats":{
+                "lockdown": "1"
+            },
+            "sprite":{
+                "addmodule": "generation/layers/flak/lockdown.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/lockdownOn.png"]
+            }
+        },
 
-    "modulePower": {
-        "name": "POWER",
-        "main": true,
-        "stats":{
-            "damage": "2"
+        "moduleStun": {
+            "name": "STUN",
+            "main": false,
+            "desc": "Status - Stun",
+            "modName": "Stun Module",
+            "stats":{
+                "stun": "20",
+                "ion": "6",
+                "sysDamage": "0"
+            },
+            "sprite":{
+                "addmodule": "generation/layers/flak/stun.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/stunOn.png"],
+                "glow": "generation/layers/flak/stunGlow.png"
+            }
+        },
+
+        "moduleFire": {
+            "name": "FIRE",
+            "main": true,
+            "desc": "Attribute - Fire",
+            "modName": "Fire Module",
+            "stats":{
+                "fireChance": "10"
+            },
+            "sprite":{
+                "add": "generation/layers/flak/fire.png",
+                "secondGlow": "generation/layers/flak/fireGlow.png"
+            }
+        },
+
+        "moduleAccuracy": {
+            "name": "ACCURACY",
+            "main": true,
+            "desc": "Attribute - Accuracy",
+            "modName": "Accuracy Module",
+            "stats":{
+                "accuracyMod": "20"
+            },
+            "sprite":{
+                "add": "generation/layers/flak/accuracy.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/accuracyOn.png"]
+            }
+        },
+        
+        "moduleHull": {
+            "name": "HULL",
+            "main": true,
+            "desc": "Attribute - Hull",
+            "modName": "Hull Module",
+            "stats":{
+                "breachChance": "10",
+                "damage": "1"
+            },
+            "sprite":{
+                "add": "generation/layers/flak/hull.png"
+            }
+        },
+
+        "modulePower": {
+            "name": "POWER",
+            "main": true,
+            "desc": "Attribute - Power",
+            "modName": "Power Module",
+            "stats":{
+                "power": "3",
+                "sysDamage": "10"
+            },
+            "sprite":{
+                "add": "generation/layers/flak/power.png"
+            }
         }
     }
 }
