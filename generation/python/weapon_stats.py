@@ -116,9 +116,10 @@ def create_new_weapon(json_data):
 
     return new_weapon_element
 
-weapon_dictionary = {}
+
 
 def create_module_weapon(json_data, module_name):
+    weapon_dictionary = {}
     module_data = json_data["modules"][module_name]
     new_module_weapon = create_new_weapon(json_data)
     weapon_dictionary[module_data["name"]] = new_module_weapon
@@ -136,8 +137,11 @@ def create_module_weapon(json_data, module_name):
 
     for stat_name, stat_value in module_data["stats"].items():
         add_module_value(new_module_weapon, stat_name, stat_value)
+    
+    return weapon_dictionary
 
 def create_two_module_weapon(json_data, main_module_data, sub_module_data):
+    weapon_dictionary = {}
     new_module_weapon = create_new_weapon(json_data)
     weapon_dictionary[f"{main_module_data['name']}_{sub_module_data['name']}"] = new_module_weapon
 
@@ -180,3 +184,5 @@ def create_two_module_weapon(json_data, main_module_data, sub_module_data):
 
     for stat_name, stat_value in sub_module_data["stats"].items():
         add_module_value(new_module_weapon, stat_name, stat_value)
+    
+    return weapon_dictionary

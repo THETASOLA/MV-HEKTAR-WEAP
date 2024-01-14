@@ -1,6 +1,6 @@
 {
     "spriteData": {
-        "name": "flak/modular_shotgun",
+        "name": "modular_shotgun",
         "animation": "flak",
         "base": {
             "path": "generation/layers/flak/body.png",
@@ -185,6 +185,7 @@
             "desc": "Attribute - Accuracy",
             "modName": "Accuracy Module",
             "stats":{
+                "radius": "32",
                 "accuracyMod": "20"
             },
             "sprite":{

@@ -1,6 +1,6 @@
 {
     "spriteData": {
-        "name": "bomb/modular_bomb_launcher",
+        "name": "modular_bomb_launcher",
         "animation": "bomb_launcher",
         "base": {
             "path": "generation/layers/bomb/body.png",

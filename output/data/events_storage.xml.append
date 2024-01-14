@@ -1,0 +1,6110 @@
+<!--MODIFYING MAIN CODE-->
+
+<mod:findName type="event" name="STORAGE_CHECK_MODULAR">
+	<mod-append:choice req="HEKTAR_MODULAR_FOCUS" blue="false" hidden="true">																																							:choice req="HEKTAR_MODULAR_DRONE_LASERS" blue="false" hidden="true">
+		<text>Configure a Modular Pinpoint.</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS"/>
+	</mod-append:choice>
+	<mod-append:choice req="HEKTAR_MODULAR_FLAK" blue="false" hidden="true">
+		<text>Configure a Modular Flak.</text>
+		<event load="STORAGE_CHECK_MODULAR_FLAK"/>
+	</mod-append:choice>
+	<mod-append:choice req="HEKTAR_MODULAR_BOMB" blue="false" hidden="true">
+		<text>Configure a Modular Bomb Launcher.</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB"/>
+	</mod-append:choice>
+</mod:findName>
+
+<!--ADDING CODE-->
+<!--WEAPON_FOCUS-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS">
+	<text>Which weapon would you like to configure?</text>
+	<checkCargo/>
+	<choice req="MODULAR_FOCUS_BASE" blue="false" hidden="true">
+		<text>Configure your Laser [No Modules]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_BASE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_BIO"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_BASE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_COOLDOWN"/>
+	</choice>
+	</choice>
+	<choice req="MODULAR_FOCUS_BASE_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_BASE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_STUN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_FIRE" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_FIRE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_BIO"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_FIRE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_FIRE_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_FIRE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_STUN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_HULL" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_HULL_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_BIO"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_HULL_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_HULL_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_HULL_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_STUN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_POWER" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_POWER_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_BIO"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_POWER_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_POWER_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_FOCUS_POWER_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_STUN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_BASE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [no modules]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_BASE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_BASE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_BASE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_BASE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base bio-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base cooldown-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base pierce-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Pierce Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base stun-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--fire-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_FIRE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--hull-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_HULL">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_HULL_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--power-->
+<event name="STORAGE_CHECK_MODULAR_FOCUS_POWER">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_FOCUS_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_FOCUS_POWER_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_FOCUS_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+
+<!--WEAPON_BOMB-->
+<event name="STORAGE_CHECK_MODULAR_BOMB">
+	<text>Which weapon would you like to configure?</text>
+	<checkCargo/>
+	<choice req="MODULAR_BOMB_BASE" blue="false" hidden="true">
+		<text>Configure your Laser [No Modules]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE"/>
+	</choice>
+	<choice req="MODULAR_BOMB_BASE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_BIO"/>
+	</choice>
+	<choice req="MODULAR_BOMB_BASE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_BASE_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_BASE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_STUN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_ACCURACY" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY"/>
+	</choice>
+	<choice req="MODULAR_BOMB_ACCURACY_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_BIO"/>
+	</choice>
+	<choice req="MODULAR_BOMB_ACCURACY_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_ACCURACY_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_ACCURACY_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_STUN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_FIRE" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE"/>
+	</choice>
+	<choice req="MODULAR_BOMB_FIRE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_BIO"/>
+	</choice>
+	<choice req="MODULAR_BOMB_FIRE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_FIRE_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_FIRE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_STUN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_HULL" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL"/>
+	</choice>
+	<choice req="MODULAR_BOMB_HULL_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_BIO"/>
+	</choice>
+	<choice req="MODULAR_BOMB_HULL_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_HULL_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_HULL_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_STUN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_POWER" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER"/>
+	</choice>
+	<choice req="MODULAR_BOMB_POWER_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_BIO"/>
+	</choice>
+	<choice req="MODULAR_BOMB_POWER_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_POWER_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_BOMB_POWER_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_STUN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_BASE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [no modules]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_BASE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_BASE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_BASE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base bio-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_BASE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base cooldown-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_BASE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base lockdown-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_BASE_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Lockdown Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base stun-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_BASE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--accuracy-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_ACCURACY_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_ACCURACY_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--fire-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_FIRE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_FIRE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--hull-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_HULL">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_HULL_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_HULL_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_HULL_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_HULL_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_HULL_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--power-->
+<event name="STORAGE_CHECK_MODULAR_BOMB_POWER">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_BOMB_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_POWER_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_POWER_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_POWER_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_BOMB_POWER_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_BOMB_POWER_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_BOMB_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--WEAPON_SHOTGUN-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN">
+	<text>Which weapon would you like to configure?</text>
+	<checkCargo/>
+	<choice req="MODULAR_SHOTGUN_BASE" blue="false" hidden="true">
+		<text>Configure your Laser [No Modules]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_BASE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_BIO"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_BASE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_BASE_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_BASE_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_BASE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_STUN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_BIO"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_ACCURACY_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Accuracy Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_STUN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_BIO"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_FIRE_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_STUN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_BIO"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_HULL_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_STUN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER_BIO" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_BIO"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER_COOLDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_COOLDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER_LOCKDOWN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Lockdown Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_LOCKDOWN"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER_PIERCE" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Pierce Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_PIERCE"/>
+	</choice>
+	<choice req="MODULAR_SHOTGUN_POWER_STUN" blue="false" hidden="true">
+		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_STUN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [no modules]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_BASE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_BASE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base bio-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base cooldown-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base lockdown-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Lockdown Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base pierce-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Pierce Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--base stun-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<choice hidden="true" req="MODULE_FIRE" blue="false">
+		<text>Install the Firestarter Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_HULL" blue="false">
+		<text>Install the Hullbuster Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_ACCURACY" blue="false">
+		<text>Install the Accuracy Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_ACCURACY"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_POWER" blue="false">
+		<text>Install the Power Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_POWER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_BASE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--accuracy-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_ACCURACY_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Accuracy Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_ACCURACY_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_ACCURACY"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--fire-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_FIRE_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_FIRE_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--hull-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_HULL_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_HULL_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_HULL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<!--power-->
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<choice hidden="true" req="MODULE_BIO" blue="false">
+		<text>Install the Anti-Bio Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_BIO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_COOLDOWN" blue="false">
+		<text>Install the Cooldown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_COOLDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_LOCKDOWN" blue="false">
+		<text>Install the Lockdown Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_LOCKDOWN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_LOCKDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_PIERCE" blue="false">
+		<text>Install the Pierce Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_PIERCE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="MODULE_STUN" blue="false">
+		<text>Install the Neural Module.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MODULE_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULAR_SHOTGUN_POWER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Detach the modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_BIO">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_BIO"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_COOLDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER_COOLDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_COOLDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_LOCKDOWN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Lockdown Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER_LOCKDOWN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_LOCKDOWN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_PIERCE">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Pierce Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_PIERCE"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>
+<event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_STUN">
+	<checkCargo/>
+	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<choice hidden="true">
+		<text>Detach both modules.</text>
+		<event>
+			<text>...</text>
+			<remove name="MODULAR_SHOTGUN_POWER_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<weapon name="MODULAR_SHOTGUN_BASE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="MODULE_POWER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...</text>
+									<weapon name="MODULE_STUN"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_MODULAR_LOAD"/>
+	</choice>
+</event>

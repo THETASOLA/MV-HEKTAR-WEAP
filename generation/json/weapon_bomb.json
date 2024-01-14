@@ -1,6 +1,6 @@
 {
     "spriteData": {
-        "name": "bomb/modular_bomb",
+        "name": "modular_bomb",
         "animation": "bomb",
         "noglow": true,
         "tpfrom": 11,

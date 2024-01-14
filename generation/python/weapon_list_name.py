@@ -4,13 +4,13 @@ def giveBlueprintsList(data, name):
     xml = etree.Element("blueprintList")
     xml.set("name", name)
     for module_name, module in data.items():
-        #print(module.find("weaponBlueprint").text)
+
         add = etree.SubElement(xml, "name")
-        add.text = module.find("weaponBlueprint").text
+        add.text = module.get("name")
     
     print(etree.tostring(xml, pretty_print=True, encoding="unicode"))
 
-    with open(f"data/autoBlueprints.xml.append", "a") as f:
+    with open(f"output/data/autoBlueprints.xml.append", "a") as f:
         f.write(etree.tostring(xml, pretty_print=True, encoding="unicode"))
         
     
