@@ -1,331 +1,331 @@
 <FTL>
-<animSheet name="modular_shotgun_base_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_base.png</animSheet>
+<animSheet name="modular_shotgun_base_base_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_base.png</animSheet>
 <weaponAnim name="modular_shotgun_base_base">
 	<sheet>modular_shotgun_base_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_base_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_base_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_pierce.png</animSheet>
-<weaponAnim name="modular_shotgun_base_pierce">
-	<sheet>modular_shotgun_base_pierce_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_shotgun_base_pierce_glow.png</chargeImage>
-</weaponAnim>
-
-<animSheet name="modular_shotgun_base_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_bio.png</animSheet>
+<animSheet name="modular_shotgun_base_bio_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_bio.png</animSheet>
 <weaponAnim name="modular_shotgun_base_bio">
 	<sheet>modular_shotgun_base_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_base_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_base_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_cooldown.png</animSheet>
+<animSheet name="modular_shotgun_base_pierce_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_pierce.png</animSheet>
+<weaponAnim name="modular_shotgun_base_pierce">
+	<sheet>modular_shotgun_base_pierce_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapon_focus/modular_shotgun_base_pierce_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_shotgun_base_cooldown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_cooldown.png</animSheet>
 <weaponAnim name="modular_shotgun_base_cooldown">
 	<sheet>modular_shotgun_base_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_base_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_base_lockdown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_lockdown.png</animSheet>
+<animSheet name="modular_shotgun_base_lockdown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_lockdown.png</animSheet>
 <weaponAnim name="modular_shotgun_base_lockdown">
 	<sheet>modular_shotgun_base_lockdown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_base_lockdown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_base_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_base_stun.png</animSheet>
+<animSheet name="modular_shotgun_base_stun_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_base_stun.png</animSheet>
 <weaponAnim name="modular_shotgun_base_stun">
 	<sheet>modular_shotgun_base_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_base_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_fire_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_base.png</animSheet>
+<animSheet name="modular_shotgun_fire_base_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_base.png</animSheet>
 <weaponAnim name="modular_shotgun_fire_base">
 	<sheet>modular_shotgun_fire_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_fire_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_fire_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_pierce.png</animSheet>
-<weaponAnim name="modular_shotgun_fire_pierce">
-	<sheet>modular_shotgun_fire_pierce_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_shotgun_fire_pierce_glow.png</chargeImage>
-</weaponAnim>
-
-<animSheet name="modular_shotgun_fire_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_bio.png</animSheet>
+<animSheet name="modular_shotgun_fire_bio_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_bio.png</animSheet>
 <weaponAnim name="modular_shotgun_fire_bio">
 	<sheet>modular_shotgun_fire_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_fire_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_fire_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_cooldown.png</animSheet>
+<animSheet name="modular_shotgun_fire_pierce_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_pierce.png</animSheet>
+<weaponAnim name="modular_shotgun_fire_pierce">
+	<sheet>modular_shotgun_fire_pierce_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapon_focus/modular_shotgun_fire_pierce_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_shotgun_fire_cooldown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_cooldown.png</animSheet>
 <weaponAnim name="modular_shotgun_fire_cooldown">
 	<sheet>modular_shotgun_fire_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_fire_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_fire_lockdown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_lockdown.png</animSheet>
+<animSheet name="modular_shotgun_fire_lockdown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_lockdown.png</animSheet>
 <weaponAnim name="modular_shotgun_fire_lockdown">
 	<sheet>modular_shotgun_fire_lockdown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_fire_lockdown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_fire_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_fire_stun.png</animSheet>
+<animSheet name="modular_shotgun_fire_stun_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_fire_stun.png</animSheet>
 <weaponAnim name="modular_shotgun_fire_stun">
 	<sheet>modular_shotgun_fire_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_fire_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_accuracy_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_base.png</animSheet>
+<animSheet name="modular_shotgun_accuracy_base_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_base.png</animSheet>
 <weaponAnim name="modular_shotgun_accuracy_base">
 	<sheet>modular_shotgun_accuracy_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_accuracy_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_accuracy_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_pierce.png</animSheet>
-<weaponAnim name="modular_shotgun_accuracy_pierce">
-	<sheet>modular_shotgun_accuracy_pierce_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_shotgun_accuracy_pierce_glow.png</chargeImage>
-</weaponAnim>
-
-<animSheet name="modular_shotgun_accuracy_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_bio.png</animSheet>
+<animSheet name="modular_shotgun_accuracy_bio_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_bio.png</animSheet>
 <weaponAnim name="modular_shotgun_accuracy_bio">
 	<sheet>modular_shotgun_accuracy_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_accuracy_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_accuracy_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_cooldown.png</animSheet>
+<animSheet name="modular_shotgun_accuracy_pierce_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_pierce.png</animSheet>
+<weaponAnim name="modular_shotgun_accuracy_pierce">
+	<sheet>modular_shotgun_accuracy_pierce_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapon_focus/modular_shotgun_accuracy_pierce_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_shotgun_accuracy_cooldown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_cooldown.png</animSheet>
 <weaponAnim name="modular_shotgun_accuracy_cooldown">
 	<sheet>modular_shotgun_accuracy_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_accuracy_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_accuracy_lockdown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_lockdown.png</animSheet>
+<animSheet name="modular_shotgun_accuracy_lockdown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_lockdown.png</animSheet>
 <weaponAnim name="modular_shotgun_accuracy_lockdown">
 	<sheet>modular_shotgun_accuracy_lockdown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_accuracy_lockdown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_accuracy_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_accuracy_stun.png</animSheet>
+<animSheet name="modular_shotgun_accuracy_stun_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_accuracy_stun.png</animSheet>
 <weaponAnim name="modular_shotgun_accuracy_stun">
 	<sheet>modular_shotgun_accuracy_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_accuracy_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_hull_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_base.png</animSheet>
+<animSheet name="modular_shotgun_hull_base_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_base.png</animSheet>
 <weaponAnim name="modular_shotgun_hull_base">
 	<sheet>modular_shotgun_hull_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_hull_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_hull_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_pierce.png</animSheet>
-<weaponAnim name="modular_shotgun_hull_pierce">
-	<sheet>modular_shotgun_hull_pierce_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_shotgun_hull_pierce_glow.png</chargeImage>
-</weaponAnim>
-
-<animSheet name="modular_shotgun_hull_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_bio.png</animSheet>
+<animSheet name="modular_shotgun_hull_bio_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_bio.png</animSheet>
 <weaponAnim name="modular_shotgun_hull_bio">
 	<sheet>modular_shotgun_hull_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_hull_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_hull_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_cooldown.png</animSheet>
+<animSheet name="modular_shotgun_hull_pierce_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_pierce.png</animSheet>
+<weaponAnim name="modular_shotgun_hull_pierce">
+	<sheet>modular_shotgun_hull_pierce_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapon_focus/modular_shotgun_hull_pierce_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_shotgun_hull_cooldown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_cooldown.png</animSheet>
 <weaponAnim name="modular_shotgun_hull_cooldown">
 	<sheet>modular_shotgun_hull_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_hull_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_hull_lockdown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_lockdown.png</animSheet>
+<animSheet name="modular_shotgun_hull_lockdown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_lockdown.png</animSheet>
 <weaponAnim name="modular_shotgun_hull_lockdown">
 	<sheet>modular_shotgun_hull_lockdown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_hull_lockdown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_hull_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_hull_stun.png</animSheet>
+<animSheet name="modular_shotgun_hull_stun_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_hull_stun.png</animSheet>
 <weaponAnim name="modular_shotgun_hull_stun">
 	<sheet>modular_shotgun_hull_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_hull_stun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_power_base_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_base.png</animSheet>
+<animSheet name="modular_shotgun_power_base_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_base.png</animSheet>
 <weaponAnim name="modular_shotgun_power_base">
 	<sheet>modular_shotgun_power_base_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_power_base_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_power_pierce_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_pierce.png</animSheet>
-<weaponAnim name="modular_shotgun_power_pierce">
-	<sheet>modular_shotgun_power_pierce_s</sheet>
-	<desc length="9" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
-	<chargeImage>weapon_focus/modular_shotgun_power_pierce_glow.png</chargeImage>
-</weaponAnim>
-
-<animSheet name="modular_shotgun_power_bio_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_bio.png</animSheet>
+<animSheet name="modular_shotgun_power_bio_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_bio.png</animSheet>
 <weaponAnim name="modular_shotgun_power_bio">
 	<sheet>modular_shotgun_power_bio_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_power_bio_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_power_cooldown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_cooldown.png</animSheet>
+<animSheet name="modular_shotgun_power_pierce_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_pierce.png</animSheet>
+<weaponAnim name="modular_shotgun_power_pierce">
+	<sheet>modular_shotgun_power_pierce_s</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
+	<chargeImage>weapon_focus/modular_shotgun_power_pierce_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="modular_shotgun_power_cooldown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_cooldown.png</animSheet>
 <weaponAnim name="modular_shotgun_power_cooldown">
 	<sheet>modular_shotgun_power_cooldown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_power_cooldown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_power_lockdown_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_lockdown.png</animSheet>
+<animSheet name="modular_shotgun_power_lockdown_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_lockdown.png</animSheet>
 <weaponAnim name="modular_shotgun_power_lockdown">
 	<sheet>modular_shotgun_power_lockdown_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_power_lockdown_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="modular_shotgun_power_stun_s" w="270" h="65" fw="30" fh="65">modular_weapon/modular_shotgun_power_stun.png</animSheet>
+<animSheet name="modular_shotgun_power_stun_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_power_stun.png</animSheet>
 <weaponAnim name="modular_shotgun_power_stun">
 	<sheet>modular_shotgun_power_stun_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="18" y="38"/>
-	<mountPoint x="5" y="59"/>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="4" y="35"/>
 	<chargeImage>weapon_focus/modular_shotgun_power_stun_glow.png</chargeImage>
 </weaponAnim>
 </FTL>

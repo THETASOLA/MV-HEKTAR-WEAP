@@ -172,7 +172,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
+  <persDamage>4</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_BASE_COOLDOWN">
@@ -195,7 +195,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>12</cooldown>
+  <cooldown>10</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -324,8 +324,7 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_base_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>20</stun>
-  <ion>6</ion>
+  <stun>14</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_FIRE">
@@ -346,7 +345,7 @@ Attribute - Fire
   <sysDamage>0</sysDamage>
   <sp>0</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
@@ -448,7 +447,7 @@ Attribute - Hull
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
+  <breachChance>6</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -477,6 +476,7 @@ Attribute - Hull
   </missSounds>
   <weaponArt>modular_shotgun_hull_base</weaponArt>
   <iconImage>flak</iconImage>
+  <hullBust>1</hullBust>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_POWER">
@@ -491,7 +491,7 @@ Attribute - Power
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -506,7 +506,7 @@ Attribute - Power
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -548,7 +548,7 @@ Status - Pierce
   <sysDamage>0</sysDamage>
   <sp>1</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
@@ -599,7 +599,7 @@ Status - Bio
   <sysDamage>0</sysDamage>
   <sp>0</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
@@ -658,7 +658,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
+  <persDamage>4</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_FIRE_COOLDOWN">
@@ -680,9 +680,9 @@ Status - Cooldown
   <sysDamage>0</sysDamage>
   <sp>0</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>12</cooldown>
+  <cooldown>10</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -731,7 +731,7 @@ Status - Lockdown
   <sysDamage>0</sysDamage>
   <sp>0</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
@@ -783,7 +783,7 @@ Status - Stun
   <sysDamage>0</sysDamage>
   <sp>0</sp>
   <spin>720</spin>
-  <fireChance>10</fireChance>
+  <fireChance>4</fireChance>
   <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
@@ -813,8 +813,7 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_fire_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>20</stun>
-  <ion>6</ion>
+  <stun>14</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_PIERCE">
@@ -948,7 +947,7 @@ Status - Bio
     </statBoost>
   </statBoosts>
   <accuracyMod>20</accuracyMod>
-  <persDamage>6</persDamage>
+  <persDamage>4</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN">
@@ -972,7 +971,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>12</cooldown>
+  <cooldown>10</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -1106,8 +1105,7 @@ Status - Stun
   <weaponArt>modular_shotgun_accuracy_stun</weaponArt>
   <iconImage>flak</iconImage>
   <accuracyMod>20</accuracyMod>
-  <stun>20</stun>
-  <ion>6</ion>
+  <stun>14</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_PIERCE">
@@ -1130,7 +1128,7 @@ Status - Pierce
   <sp>1</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
+  <breachChance>6</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1159,6 +1157,7 @@ Status - Pierce
   </missSounds>
   <weaponArt>modular_shotgun_hull_pierce</weaponArt>
   <iconImage>flak</iconImage>
+  <hullBust>1</hullBust>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_BIO">
@@ -1181,7 +1180,7 @@ Status - Bio
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
+  <breachChance>6</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1239,7 +1238,8 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
+  <hullBust>1</hullBust>
+  <persDamage>4</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_COOLDOWN">
@@ -1262,8 +1262,8 @@ Status - Cooldown
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
-  <cooldown>12</cooldown>
+  <breachChance>6</breachChance>
+  <cooldown>10</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -1291,6 +1291,7 @@ Status - Cooldown
   </missSounds>
   <weaponArt>modular_shotgun_hull_cooldown</weaponArt>
   <iconImage>flak</iconImage>
+  <hullBust>1</hullBust>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_LOCKDOWN">
@@ -1313,7 +1314,7 @@ Status - Lockdown
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
+  <breachChance>6</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1342,6 +1343,7 @@ Status - Lockdown
   </missSounds>
   <weaponArt>modular_shotgun_hull_lockdown</weaponArt>
   <iconImage>flak</iconImage>
+  <hullBust>1</hullBust>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
@@ -1365,7 +1367,7 @@ Status - Stun
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>10</breachChance>
+  <breachChance>6</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1394,8 +1396,8 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_hull_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>20</stun>
-  <ion>6</ion>
+  <hullBust>1</hullBust>
+  <stun>14</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_POWER_PIERCE">
@@ -1411,7 +1413,7 @@ Status - Pierce
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -1426,7 +1428,7 @@ Status - Pierce
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -1462,7 +1464,7 @@ Status - Bio
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -1477,7 +1479,7 @@ Status - Bio
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -1527,7 +1529,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
+  <persDamage>4</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_POWER_COOLDOWN">
@@ -1543,7 +1545,7 @@ Status - Cooldown
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -1551,14 +1553,14 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>12</cooldown>
+  <cooldown>10</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -1594,7 +1596,7 @@ Status - Lockdown
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -1609,7 +1611,7 @@ Status - Lockdown
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -1646,7 +1648,7 @@ Status - Stun
 </desc>
   <short>M. Flak</short>
   <drone_targetable>1</drone_targetable>
-  <radius>42</radius>
+  <radius>52</radius>
   <shots>1</shots>
   <damage>1</damage>
   <sysDamage>0</sysDamage>
@@ -1661,7 +1663,7 @@ Status - Stun
   <rarity>0</rarity>
   <speed>28</speed>
   <projectiles>
-    <projectile count="4" fake="false">debris_med</projectile>
+    <projectile count="5" fake="false">debris_med</projectile>
   </projectiles>
   <launchSounds>
     <sound>flak</sound>
@@ -1682,7 +1684,6 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_power_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>20</stun>
-  <ion>6</ion>
+  <stun>14</stun>
 </weaponBlueprint>
 
