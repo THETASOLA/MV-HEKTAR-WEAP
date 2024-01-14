@@ -22,7 +22,7 @@ Incompatible with the accuracy and lockdown module.</desc>
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>modular_focus_base</weaponArt>
+  <weaponArt>modular_focus_base_base</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -271,7 +271,7 @@ Attribute - Power
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
+  <weaponArt>modular_focus_power_base</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -625,7 +625,7 @@ Status - Pierce
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
+  <weaponArt>modular_focus_power_pierce</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -657,7 +657,7 @@ Status - Bio
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
+  <weaponArt>modular_focus_power_bio</weaponArt>
   <iconImage>beam</iconImage>
   <statBoosts>
     <statBoost name="moveSpeedMultiplier">
@@ -719,7 +719,7 @@ Status - Cooldown
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
+  <weaponArt>modular_focus_power_cooldown</weaponArt>
   <iconImage>beam</iconImage>
 </weaponBlueprint>
 
@@ -751,7 +751,7 @@ Status - Stun
   <launchSounds>
     <sound>focus_weak</sound>
   </launchSounds>
-  <weaponArt>focus_2</weaponArt>
+  <weaponArt>modular_focus_power_stun</weaponArt>
   <iconImage>beam</iconImage>
   <stun>25</stun>
 </weaponBlueprint>
@@ -799,7 +799,7 @@ Has no incompatibilities.</desc>
   <missSounds>
     <sound>miss</sound>
   </missSounds>
-  <weaponArt>modular_shotgun_base</weaponArt>
+  <weaponArt>modular_shotgun_base_base</weaponArt>
   <iconImage>flak</iconImage>
 </weaponBlueprint>
 
@@ -2464,7 +2464,7 @@ Incompatible with the piercing module.</desc>
   <cost>65</cost>
   <bp>2</bp>
   <rarity>0</rarity>
-  <image>modular_bomb_base</image>
+  <image>modular_bomb_base_base</image>
   <length>1</length>
   <explosion>explosion_random</explosion>
   <launchSounds>
@@ -2473,7 +2473,7 @@ Incompatible with the piercing module.</desc>
   <hitShipSounds>
     <sound>smallExplosion</sound>
   </hitShipSounds>
-  <weaponArt>modular_bomb_launcher_base</weaponArt>
+  <weaponArt>modular_bomb_launcher_base_base</weaponArt>
   <iconImage>bomb</iconImage>
 </weaponBlueprint>
 

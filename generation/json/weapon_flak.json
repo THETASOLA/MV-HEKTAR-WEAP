@@ -86,7 +86,7 @@
         "missSounds": {
             "sound": "miss"
         },
-        "weaponArt": "modular_shotgun_base",
+        "weaponArt": "modular_shotgun_base_base",
         "iconImage": "flak"
     },
 

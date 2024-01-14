@@ -5,9 +5,9 @@
 		<text>Configure a Modular Pinpoint.</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS"/>
 	</mod-append:choice>
-	<mod-append:choice req="HEKTAR_MODULAR_FLAK" blue="false" hidden="true">
+	<mod-append:choice req="HEKTAR_MODULAR_SHOTGUN" blue="false" hidden="true">
 		<text>Configure a Modular Flak.</text>
-		<event load="STORAGE_CHECK_MODULAR_FLAK"/>
+		<event load="STORAGE_CHECK_MODULAR_SHOTGUN"/>
 	</mod-append:choice>
 	<mod-append:choice req="HEKTAR_MODULAR_BOMB" blue="false" hidden="true">
 		<text>Configure a Modular Bomb Launcher.</text>
@@ -21,84 +21,83 @@
 	<text>Which weapon would you like to configure?</text>
 	<checkCargo/>
 	<choice req="MODULAR_FOCUS_BASE" blue="false" hidden="true">
-		<text>Configure your Laser [No Modules]</text>
+		<text>Configure your Pinpoint [No Modules]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_BASE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Anti-Bio Module]</text>
+		<text>Configure your Pinpoint [Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_BIO"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_BASE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Cooldown Module]</text>
+		<text>Configure your Pinpoint [Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_COOLDOWN"/>
 	</choice>
-	</choice>
 	<choice req="MODULAR_FOCUS_BASE_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Pierce Module]</text>
+		<text>Configure your Pinpoint [Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_BASE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Stun Module]</text>
+		<text>Configure your Pinpoint [Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_BASE_STUN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_FIRE" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module]</text>
+		<text>Configure your Pinpoint [Firestarter Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_FIRE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<text>Configure your Pinpoint [Firestarter Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_BIO"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_FIRE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<text>Configure your Pinpoint [Firestarter Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_FIRE_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Pierce Module]</text>
+		<text>Configure your Pinpoint [Firestarter Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_FIRE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<text>Configure your Pinpoint [Firestarter Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_FIRE_STUN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_HULL" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module]</text>
+		<text>Configure your Pinpoint [Hullbuster Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_HULL_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<text>Configure your Pinpoint [Hullbuster Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_BIO"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_HULL_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<text>Configure your Pinpoint [Hullbuster Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_HULL_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Pierce Module]</text>
+		<text>Configure your Pinpoint [Hullbuster Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_HULL_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<text>Configure your Pinpoint [Hullbuster Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_HULL_STUN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_POWER" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module]</text>
+		<text>Configure your Pinpoint [Power Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_POWER_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<text>Configure your Pinpoint [Power Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_BIO"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_POWER_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<text>Configure your Pinpoint [Power Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_POWER_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Pierce Module]</text>
+		<text>Configure your Pinpoint [Power Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_FOCUS_POWER_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<text>Configure your Pinpoint [Power Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS_POWER_STUN"/>
 	</choice>
 	<choice hidden="true">
@@ -109,7 +108,7 @@
 <!--base-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_BASE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [no modules]</text>
+	<text>Currently configuring Modular Focus. [no modules]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -293,7 +292,7 @@
 <!--base bio-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<text>Currently configuring Modular Focus. [Anti-Bio Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -402,7 +401,7 @@
 <!--base cooldown-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<text>Currently configuring Modular Focus. [Cooldown Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -511,7 +510,7 @@
 <!--base pierce-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Pierce Module]</text>
+	<text>Currently configuring Modular Focus. [Pierce Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -620,7 +619,7 @@
 <!--base stun-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_BASE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<text>Currently configuring Modular Focus. [Stun Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -729,7 +728,7 @@
 <!--fire-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<text>Currently configuring Modular Focus. [Firestarter Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -862,7 +861,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Focus. [Firestarter Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -902,7 +901,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Focus. [Firestarter Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -942,7 +941,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Pierce Module]</text>
+	<text>Currently configuring Modular Focus. [Firestarter Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -982,7 +981,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_FIRE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<text>Currently configuring Modular Focus. [Firestarter Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1023,7 +1022,7 @@
 <!--hull-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_HULL">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<text>Currently configuring Modular Focus. [Hullbuster Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -1156,7 +1155,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Focus. [Hullbuster Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1196,7 +1195,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Focus. [Hullbuster Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1236,7 +1235,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Pierce Module]</text>
+	<text>Currently configuring Modular Focus. [Hullbuster Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1276,7 +1275,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_HULL_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<text>Currently configuring Modular Focus. [Hullbuster Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1317,7 +1316,7 @@
 <!--power-->
 <event name="STORAGE_CHECK_MODULAR_FOCUS_POWER">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<text>Currently configuring Modular Focus. [Power Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -1450,7 +1449,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Focus. [Power Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1490,7 +1489,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Focus. [Power Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1530,7 +1529,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Pierce Module]</text>
+	<text>Currently configuring Modular Focus. [Power Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1570,7 +1569,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_FOCUS_POWER_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<text>Currently configuring Modular Focus. [Power Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -1614,103 +1613,103 @@
 	<text>Which weapon would you like to configure?</text>
 	<checkCargo/>
 	<choice req="MODULAR_BOMB_BASE" blue="false" hidden="true">
-		<text>Configure your Laser [No Modules]</text>
+		<text>Configure your Bomb [No Modules]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE"/>
 	</choice>
 	<choice req="MODULAR_BOMB_BASE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Anti-Bio Module]</text>
+		<text>Configure your Bomb [Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_BIO"/>
 	</choice>
 	<choice req="MODULAR_BOMB_BASE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Cooldown Module]</text>
+		<text>Configure your Bomb [Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_BASE_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Lockdown Module]</text>
+		<text>Configure your Bomb [Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_BASE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Stun Module]</text>
+		<text>Configure your Bomb [Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_BASE_STUN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_ACCURACY" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module]</text>
+		<text>Configure your Bomb [Accuracy Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY"/>
 	</choice>
 	<choice req="MODULAR_BOMB_ACCURACY_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Anti-Bio Module]</text>
+		<text>Configure your Bomb [Accuracy Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_BIO"/>
 	</choice>
 	<choice req="MODULAR_BOMB_ACCURACY_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Cooldown Module]</text>
+		<text>Configure your Bomb [Accuracy Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_ACCURACY_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Lockdown Module]</text>
+		<text>Configure your Bomb [Accuracy Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_ACCURACY_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Stun Module]</text>
+		<text>Configure your Bomb [Accuracy Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_STUN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_FIRE" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module]</text>
+		<text>Configure your Bomb [Firestarter Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE"/>
 	</choice>
 	<choice req="MODULAR_BOMB_FIRE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<text>Configure your Bomb [Firestarter Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_BIO"/>
 	</choice>
 	<choice req="MODULAR_BOMB_FIRE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<text>Configure your Bomb [Firestarter Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_FIRE_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Lockdown Module]</text>
+		<text>Configure your Bomb [Firestarter Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_FIRE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<text>Configure your Bomb [Firestarter Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_FIRE_STUN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_HULL" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module]</text>
+		<text>Configure your Bomb [Hullbuster Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL"/>
 	</choice>
 	<choice req="MODULAR_BOMB_HULL_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<text>Configure your Bomb [Hullbuster Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_BIO"/>
 	</choice>
 	<choice req="MODULAR_BOMB_HULL_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<text>Configure your Bomb [Hullbuster Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_HULL_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Lockdown Module]</text>
+		<text>Configure your Bomb [Hullbuster Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_HULL_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<text>Configure your Bomb [Hullbuster Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_HULL_STUN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_POWER" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module]</text>
+		<text>Configure your Bomb [Power Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER"/>
 	</choice>
 	<choice req="MODULAR_BOMB_POWER_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<text>Configure your Bomb [Power Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_BIO"/>
 	</choice>
 	<choice req="MODULAR_BOMB_POWER_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<text>Configure your Bomb [Power Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_POWER_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Lockdown Module]</text>
+		<text>Configure your Bomb [Power Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_BOMB_POWER_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<text>Configure your Bomb [Power Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_BOMB_POWER_STUN"/>
 	</choice>
 	<choice hidden="true">
@@ -1721,7 +1720,7 @@
 <!--base-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_BASE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [no modules]</text>
+	<text>Currently configuring Modular Bomb. [no modules]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -1930,7 +1929,7 @@
 <!--base bio-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_BASE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<text>Currently configuring Modular Bomb. [Anti-Bio Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -2064,7 +2063,7 @@
 <!--base cooldown-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_BASE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<text>Currently configuring Modular Bomb. [Cooldown Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -2198,7 +2197,7 @@
 <!--base lockdown-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_BASE_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Lockdown Module]</text>
+	<text>Currently configuring Modular Bomb. [Lockdown Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -2332,7 +2331,7 @@
 <!--base stun-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_BASE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<text>Currently configuring Modular Bomb. [Stun Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -2466,7 +2465,7 @@
 <!--accuracy-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module]</text>
+	<text>Currently configuring Modular Bomb. [Accuracy Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -2599,7 +2598,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Bomb. [Accuracy Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2639,7 +2638,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Bomb. [Accuracy Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2679,7 +2678,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Bomb. [Accuracy Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2719,7 +2718,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_ACCURACY_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Stun Module]</text>
+	<text>Currently configuring Modular Bomb. [Accuracy Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2760,7 +2759,7 @@
 <!--fire-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_FIRE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<text>Currently configuring Modular Bomb. [Firestarter Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -2893,7 +2892,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Bomb. [Firestarter Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2933,7 +2932,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Bomb. [Firestarter Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -2973,7 +2972,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Bomb. [Firestarter Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3013,7 +3012,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_FIRE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<text>Currently configuring Modular Bomb. [Firestarter Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3054,7 +3053,7 @@
 <!--hull-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_HULL">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<text>Currently configuring Modular Bomb. [Hullbuster Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -3187,7 +3186,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_HULL_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Bomb. [Hullbuster Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3227,7 +3226,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_HULL_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Bomb. [Hullbuster Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3267,7 +3266,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_HULL_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Bomb. [Hullbuster Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3307,7 +3306,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_HULL_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<text>Currently configuring Modular Bomb. [Hullbuster Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3348,7 +3347,7 @@
 <!--power-->
 <event name="STORAGE_CHECK_MODULAR_BOMB_POWER">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<text>Currently configuring Modular Bomb. [Power Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -3481,7 +3480,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_POWER_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Bomb. [Power Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3521,7 +3520,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_POWER_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Bomb. [Power Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3561,7 +3560,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_POWER_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Bomb. [Power Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3601,7 +3600,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_BOMB_POWER_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<text>Currently configuring Modular Bomb. [Power Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -3644,123 +3643,123 @@
 	<text>Which weapon would you like to configure?</text>
 	<checkCargo/>
 	<choice req="MODULAR_SHOTGUN_BASE" blue="false" hidden="true">
-		<text>Configure your Laser [No Modules]</text>
+		<text>Configure your Flak [No Modules]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_BASE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Anti-Bio Module]</text>
+		<text>Configure your Flak [Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_BIO"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_BASE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Cooldown Module]</text>
+		<text>Configure your Flak [Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_BASE_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Lockdown Module]</text>
+		<text>Configure your Flak [Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_BASE_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Pierce Module]</text>
+		<text>Configure your Flak [Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_BASE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Stun Module]</text>
+		<text>Configure your Flak [Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_STUN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module]</text>
+		<text>Configure your Flak [Accuracy Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Anti-Bio Module]</text>
+		<text>Configure your Flak [Accuracy Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_BIO"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Cooldown Module]</text>
+		<text>Configure your Flak [Accuracy Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Lockdown Module]</text>
+		<text>Configure your Flak [Accuracy Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Pierce Module]</text>
+		<text>Configure your Flak [Accuracy Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_ACCURACY_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Accuracy Module, Stun Module]</text>
+		<text>Configure your Flak [Accuracy Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_STUN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module]</text>
+		<text>Configure your Flak [Firestarter Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Anti-Bio Module]</text>
+		<text>Configure your Flak [Firestarter Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_BIO"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Cooldown Module]</text>
+		<text>Configure your Flak [Firestarter Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Lockdown Module]</text>
+		<text>Configure your Flak [Firestarter Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Pierce Module]</text>
+		<text>Configure your Flak [Firestarter Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_FIRE_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Firestarter Module, Stun Module]</text>
+		<text>Configure your Flak [Firestarter Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_STUN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module]</text>
+		<text>Configure your Flak [Hullbuster Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Anti-Bio Module]</text>
+		<text>Configure your Flak [Hullbuster Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_BIO"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Cooldown Module]</text>
+		<text>Configure your Flak [Hullbuster Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Lockdown Module]</text>
+		<text>Configure your Flak [Hullbuster Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Pierce Module]</text>
+		<text>Configure your Flak [Hullbuster Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_HULL_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Hullbuster Module, Stun Module]</text>
+		<text>Configure your Flak [Hullbuster Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_STUN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module]</text>
+		<text>Configure your Flak [Power Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER_BIO" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Anti-Bio Module]</text>
+		<text>Configure your Flak [Power Module, Anti-Bio Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_BIO"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER_COOLDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Cooldown Module]</text>
+		<text>Configure your Flak [Power Module, Cooldown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_COOLDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER_LOCKDOWN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Lockdown Module]</text>
+		<text>Configure your Flak [Power Module, Lockdown Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_LOCKDOWN"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER_PIERCE" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Pierce Module]</text>
+		<text>Configure your Flak [Power Module, Pierce Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_PIERCE"/>
 	</choice>
 	<choice req="MODULAR_SHOTGUN_POWER_STUN" blue="false" hidden="true">
-		<text>Configure your Laser [Power Module, Stun Module]</text>
+		<text>Configure your Flak [Power Module, Stun Module]</text>
 		<event load="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_STUN"/>
 	</choice>
 	<choice hidden="true">
@@ -3771,7 +3770,7 @@
 <!--base-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [no modules]</text>
+	<text>Currently configuring Modular Flak. [no modules]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -4005,7 +4004,7 @@
 <!--base bio-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Anti-Bio Module]</text>
+	<text>Currently configuring Modular Flak. [Anti-Bio Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -4139,7 +4138,7 @@
 <!--base cooldown-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Cooldown Module]</text>
+	<text>Currently configuring Modular Flak. [Cooldown Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -4273,7 +4272,7 @@
 <!--base lockdown-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Lockdown Module]</text>
+	<text>Currently configuring Modular Flak. [Lockdown Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -4407,7 +4406,7 @@
 <!--base pierce-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Pierce Module]</text>
+	<text>Currently configuring Modular Flak. [Pierce Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -4541,7 +4540,7 @@
 <!--base stun-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_BASE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Stun Module]</text>
+	<text>Currently configuring Modular Flak. [Stun Module]</text>
 	<choice hidden="true" req="MODULE_FIRE" blue="false">
 		<text>Install the Firestarter Module.</text>
 		<event>
@@ -4675,7 +4674,7 @@
 <!--accuracy-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -4833,7 +4832,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -4873,7 +4872,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -4913,7 +4912,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -4953,7 +4952,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Pierce Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -4993,7 +4992,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_ACCURACY_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Accuracy Module, Stun Module]</text>
+	<text>Currently configuring Modular Flak. [Accuracy Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5034,7 +5033,7 @@
 <!--fire-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -5192,7 +5191,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5232,7 +5231,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5272,7 +5271,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5312,7 +5311,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Pierce Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5352,7 +5351,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_FIRE_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Firestarter Module, Stun Module]</text>
+	<text>Currently configuring Modular Flak. [Firestarter Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5393,7 +5392,7 @@
 <!--hull-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -5551,7 +5550,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5591,7 +5590,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5631,7 +5630,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5671,7 +5670,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Pierce Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5711,7 +5710,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_HULL_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Hullbuster Module, Stun Module]</text>
+	<text>Currently configuring Modular Flak. [Hullbuster Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5752,7 +5751,7 @@
 <!--power-->
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module]</text>
 	<choice hidden="true" req="MODULE_BIO" blue="false">
 		<text>Install the Anti-Bio Module.</text>
 		<event>
@@ -5910,7 +5909,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_BIO">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Anti-Bio Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module, Anti-Bio Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5950,7 +5949,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_COOLDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Cooldown Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module, Cooldown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -5990,7 +5989,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_LOCKDOWN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Lockdown Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module, Lockdown Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -6030,7 +6029,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_PIERCE">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Pierce Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module, Pierce Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>
@@ -6070,7 +6069,7 @@
 </event>
 <event name="STORAGE_CHECK_MODULAR_SHOTGUN_POWER_STUN">
 	<checkCargo/>
-	<text>Currently configuring Modular Laser. [Power Module, Stun Module]</text>
+	<text>Currently configuring Modular Flak. [Power Module, Stun Module]</text>
 	<choice hidden="true">
 		<text>Detach both modules.</text>
 		<event>

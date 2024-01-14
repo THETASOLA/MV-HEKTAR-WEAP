@@ -94,7 +94,7 @@
         "cost": "65",
         "bp": "2",
         "rarity": "0",
-        "image": "modular_bomb_base",
+        "image": "modular_bomb_base_base",
         "length": "1",
         "explosion": "explosion_random",
         "launchSounds": {
@@ -103,7 +103,7 @@
         "hitShipSounds": {
             "sound": "smallExplosion"
         },
-        "weaponArt": "modular_bomb_launcher_base",
+        "weaponArt": "modular_bomb_launcher_base_base",
         "iconImage": "bomb"
     },
 
@@ -120,7 +120,7 @@
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/bio.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/bioOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/bioOn.png"]
             }
         },
 
@@ -134,7 +134,7 @@
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/cooldown.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/cooldownOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/cooldownOn.png"]
             }
         },
 
@@ -148,7 +148,7 @@
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/lockdown.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/lockdownOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/lockdownOn.png"]
             }
         },
 
@@ -164,7 +164,7 @@
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/stun.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/stunOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10,11], "generation/layers/bomb/stunOn.png"]
             }
         },
 

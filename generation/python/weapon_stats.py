@@ -23,13 +23,15 @@ def generate_weapon_image(imgType, element, name, main, name2=""):
     name2 = name2.lower()
 
     if name2 != "":
-        split[-1] = name
-        elem.text = "_".join(split) + "_" + name2 
+        split[-2] = name
+        split[-1] = name2
+        elem.text = "_".join(split)
     elif main:
-        split[-1] = name
-        elem.text = "_".join(split) + "_base" 
+        split[-2] = name
+        elem.text = "_".join(split)
     else:
-        elem.text = "_".join(split) + "_" + name
+        split[-1] = name
+        elem.text = "_".join(split)
 
 def add_bio_stat_boosts(element):
     bio_stat_boosts = {

@@ -51,7 +51,7 @@
         "launchSounds": {
             "sound": "focus_weak"
         },
-        "weaponArt": "modular_focus_base",
+        "weaponArt": "modular_focus_base_base",
         "iconImage": "beam"
     },
 
@@ -65,8 +65,8 @@
                 "sp": "1"
             },
             "sprite":{
-                "add": "generation/layers/pinpoint/pierce.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/pierceOn.png"]
+                "addmodule": "generation/layers/pinpoint/pierce.png",
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/pierceOn.png"]
             }
         },
 
@@ -80,9 +80,9 @@
                 "persDamage": "6"
             },
             "sprite":{
-                "add": "generation/layers/pinpoint/bio.png",
+                "addmodule": "generation/layers/pinpoint/bio.png",
                 "glow": "generation/layers/pinpoint/glowBio.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/bioOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/bioOn.png"]
             }
         },
 
@@ -96,8 +96,8 @@
                 "cooldown": "8"
             },
             "sprite":{
-                "add": "generation/layers/pinpoint/cooldown.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/cooldownOn.png"]
+                "addmodule": "generation/layers/pinpoint/cooldown.png",
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/cooldownOn.png"]
             }
         },
 
@@ -110,9 +110,9 @@
                 "stun": "25"
             },
             "sprite":{
-                "add": "generation/layers/pinpoint/stun.png",
+                "addmodule": "generation/layers/pinpoint/stun.png",
                 "glow": "generation/layers/pinpoint/glowStun.png",
-                "addglow": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/stunOn.png"]
+                "addglowmodule": [[1,2,3,4,5,6,7,8,9,10], "generation/layers/pinpoint/stunOn.png"]
             }
         },
 
@@ -151,7 +151,6 @@
             "desc": "Attribute - Power",
             "modName": "Power Module",
             "stats":{
-                "weaponArt": "focus_2",
                 "power": "3",
                 "damage": "5"
             },
