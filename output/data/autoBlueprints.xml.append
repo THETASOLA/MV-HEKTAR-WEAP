@@ -79,10 +79,9 @@
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_HEKTAR_BASE">
-	<mod-append:name>MODULAR_LASER_BASE</mod-append:name>
-	<mod-append:name>MODULAR_BEAM_BASE</mod-append:name>
-	<mod-append:name>MODULAR_MISSILE_BASE</mod-append:name>
-	<mod-append:name>MODULAR_ION_BASE</mod-append:name>
+	<mod-append:name>MODULAR_FOCUS_BASE</mod-append:name>
+	<mod-append:name>MODULAR_BOMB_BASE</mod-append:name>
+	<mod-append:name>MODULAR_SHOTGUN_BASE</mod-append:name>
 </mod:findName>
 
 <blueprintList name="HEKTAR_MODULAR_FOCUS">

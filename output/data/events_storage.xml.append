@@ -1,7 +1,7 @@
 <!--MODIFYING MAIN CODE-->
 
 <mod:findName type="event" name="STORAGE_CHECK_MODULAR">
-	<mod-append:choice req="HEKTAR_MODULAR_FOCUS" blue="false" hidden="true">																																							:choice req="HEKTAR_MODULAR_DRONE_LASERS" blue="false" hidden="true">
+	<mod-append:choice req="HEKTAR_MODULAR_FOCUS" blue="false" hidden="true">
 		<text>Configure a Modular Pinpoint.</text>
 		<event load="STORAGE_CHECK_MODULAR_FOCUS"/>
 	</mod-append:choice>
