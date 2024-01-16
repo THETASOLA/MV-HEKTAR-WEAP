@@ -186,7 +186,7 @@
             "modName": "Accuracy Module",
             "stats":{
                 "radius": "32",
-                "accuracyMod": "20"
+                "accuracyMod": "10"
             },
             "sprite":{
                 "add": "generation/layers/flak/accuracy.png",

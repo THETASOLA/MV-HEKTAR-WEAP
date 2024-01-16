@@ -93,7 +93,7 @@
             "modName": "Cooldown Module",
             "weaponBlueprint": false,
             "stats":{
-                "cooldown": "8"
+                "cooldown": "14"
             },
             "sprite":{
                 "addmodule": "generation/layers/pinpoint/cooldown.png",
@@ -107,7 +107,7 @@
             "desc": "Status - Stun",
             "modName": "Stun Module",
             "stats":{
-                "stun": "25"
+                "stun": "22"
             },
             "sprite":{
                 "addmodule": "generation/layers/pinpoint/stun.png",
@@ -122,7 +122,7 @@
             "desc": "Attribute - Fire",
             "modName": "Fire Module",
             "stats":{
-                "fireChance": "5"
+                "fireChance": "10"
             },
             "sprite":{
                 "add": "generation/layers/pinpoint/fire.png"
@@ -136,8 +136,9 @@
             "modName": "Hull Module",
             "stats":{
                 "hullBust": "1",
-                "breachChance": "2",
-                "damage": "4"
+                "breachChance": "10",
+                "damage": "4",
+                "sysDamage": "-1"
             },
             "sprite":{
                 "add": "generation/layers/pinpoint/hull.png",
