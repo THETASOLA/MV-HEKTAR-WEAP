@@ -93,7 +93,7 @@
             "modName": "Anti-Bio Module",
             "bio": true,
             "stats":{
-                "persDamage": "4"
+                "persDamage": "2"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/bio.png",
@@ -108,6 +108,7 @@
             "desc": "Status - Pierce",
             "modName": "Pierce Module",
             "stats":{
+                "breachChance": "3",
                 "sp": "1"
             },
             "sprite":{
@@ -122,7 +123,7 @@
             "desc": "Status - Cooldown",
             "modName": "Cooldown Module",
             "stats":{
-                "cooldown": "10"
+                "cooldown": "9"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/cooldown.png",
@@ -150,7 +151,7 @@
             "desc": "Status - Stun",
             "modName": "Stun Module",
             "stats":{
-                "stun": "14"
+                "stun": "12"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/stun.png",
@@ -196,7 +197,7 @@
             "modName": "Hull Module",
             "stats":{
                 "hullBust": "1",
-                "breachChance": "6"
+                "breachChance": "1"
             },
             "sprite":{
                 "add": "generation/layers/flak/hull.png"

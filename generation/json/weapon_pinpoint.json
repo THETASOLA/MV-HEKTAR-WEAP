@@ -62,6 +62,7 @@
             "desc": "Status - Pierce",
             "modName": "Pierce Module",
             "stats":{
+                "breachChance": "3",
                 "sp": "1"
             },
             "sprite":{
@@ -93,7 +94,7 @@
             "modName": "Cooldown Module",
             "weaponBlueprint": false,
             "stats":{
-                "cooldown": "14"
+                "cooldown": "12"
             },
             "sprite":{
                 "addmodule": "generation/layers/pinpoint/cooldown.png",

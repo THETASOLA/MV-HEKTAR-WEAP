@@ -133,7 +133,7 @@
             "desc": "Status - Cooldown",
             "modName": "Cooldown Module",
             "stats":{
-                "cooldown": "15"
+                "cooldown": "13"
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/cooldown.png",
