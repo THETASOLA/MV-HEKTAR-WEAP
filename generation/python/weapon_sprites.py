@@ -268,8 +268,8 @@ def generate_animation_data_flak(xml, name):
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>4</fireFrame>
-	<firePoint  x="17" y="13"/>
-	<mountPoint x="4" y="35"/>
+	<firePoint  x="14" y="9"/>
+	<mountPoint x="2" y="28"/>
 	<chargeImage>weapon_focus/modular_shotgun_{name}_glow.png</chargeImage>
 </weaponAnim>
 """
