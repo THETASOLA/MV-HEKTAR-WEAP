@@ -262,7 +262,7 @@ def generate_animation_data_flak(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_shotgun_{name}_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_{name}.png</animSheet>
+<animSheet name="modular_shotgun_{name}_s" w="342" h="53" fw="38" fh="53">modular_weapon/modular_shotgun_{name}.png</animSheet>
 <weaponAnim name="modular_shotgun_{name}">
 	<sheet>modular_shotgun_{name}_s</sheet>
 	<desc length="9" x="0" y="0"/>
