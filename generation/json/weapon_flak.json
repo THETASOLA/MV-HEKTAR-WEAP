@@ -168,8 +168,9 @@
                 "fireChance": "4"
             },
             "sprite":{
+                
                 "add": "generation/layers/flak/fire.png",
-                "glow": "generation/layers/flak/fireGlow.png"
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/fireGlow.png"]
             }
         },
 
