@@ -262,14 +262,14 @@ def generate_animation_data_flak(xml, name):
     name = name.lower()
 
     xml += f"""
-<animSheet name="modular_shotgun_{name}_s" w="279" h="50" fw="31" fh="50">modular_weapon/modular_shotgun_{name}.png</animSheet>
+<animSheet name="modular_shotgun_{name}_s" w="342" h="53" fw="38" fh="53">modular_weapon/modular_shotgun_{name}.png</animSheet>
 <weaponAnim name="modular_shotgun_{name}">
 	<sheet>modular_shotgun_{name}_s</sheet>
 	<desc length="9" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>4</fireFrame>
-	<firePoint  x="17" y="13"/>
-	<mountPoint x="4" y="35"/>
+	<firePoint  x="14" y="9"/>
+	<mountPoint x="2" y="28"/>
 	<chargeImage>weapon_focus/modular_shotgun_{name}_glow.png</chargeImage>
 </weaponAnim>
 """
@@ -332,17 +332,17 @@ if __name__ == "__main__":
     animation_xml = [""]
     animation_xml[0] = "<FTL>"
 
-    with open('generation/json/weapon_pinpoint.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
-
-    with open('generation/json/weapon_bomb.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
-
-    with open('generation/json/weapon_bombL.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
+    #with open('generation/json/weapon_pinpoint.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+#
+    #with open('generation/json/weapon_bomb.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+#
+    #with open('generation/json/weapon_bombL.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
 
     with open('generation/json/weapon_flak.json') as json_file:
         data = json.load(json_file)

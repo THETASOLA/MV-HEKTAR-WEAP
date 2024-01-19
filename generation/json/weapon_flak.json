@@ -14,10 +14,10 @@
                 "positionsStart": 1,
                 "below": true,
                 "movement": [
-                    [[3, 9], [-1,0]],
-                    [[4, 8], [-2,0]],
-                    [[5, 7], [-3,0]],
-                    [[6], [-4,0]]
+                    [[3, 9], [-1,-1]],
+                    [[4, 8], [-2,-2]],
+                    [[5, 7], [-3,-3]],
+                    [[6], [-4,-4]]
                 ]
             },
 
@@ -27,22 +27,16 @@
                 "positions": [2,3,4,5,6],
                 "below": true,
                 "movement": [
-                    [[3, 9], [-1,0]],
-                    [[4, 8], [-2,0]],
-                    [[5, 7], [-3,0]],
-                    [[6], [-4,0]]
+                    [[3, 9], [-1,-1]],
+                    [[4, 8], [-2,-2]],
+                    [[5, 7], [-3,-3]],
+                    [[6], [-4,-4]]
                 ]
             },
 
             {
                 "name": "glow",
                 "path": "generation/layers/flak/glow.png",
-                "positions": [2,3,4,5,6]
-            },
-
-            {
-                "name": "secondGlow",
-                "path": "generation/layers/flak/secondGlow.png",
                 "positions": [2,3,4,5,6]
             }
 
@@ -99,7 +93,7 @@
             "modName": "Anti-Bio Module",
             "bio": true,
             "stats":{
-                "persDamage": "4"
+                "persDamage": "2"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/bio.png",
@@ -114,6 +108,7 @@
             "desc": "Status - Pierce",
             "modName": "Pierce Module",
             "stats":{
+                "breachChance": "3",
                 "sp": "1"
             },
             "sprite":{
@@ -128,7 +123,7 @@
             "desc": "Status - Cooldown",
             "modName": "Cooldown Module",
             "stats":{
-                "cooldown": "10"
+                "cooldown": "9"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/cooldown.png",
@@ -156,7 +151,7 @@
             "desc": "Status - Stun",
             "modName": "Stun Module",
             "stats":{
-                "stun": "14"
+                "stun": "12"
             },
             "sprite":{
                 "addmodule": "generation/layers/flak/stun.png",
@@ -174,8 +169,9 @@
                 "fireChance": "4"
             },
             "sprite":{
+                
                 "add": "generation/layers/flak/fire.png",
-                "secondGlow": "generation/layers/flak/fireGlow.png"
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/fireGlow.png"]
             }
         },
 
@@ -186,7 +182,7 @@
             "modName": "Accuracy Module",
             "stats":{
                 "radius": "32",
-                "accuracyMod": "20"
+                "accuracyMod": "10"
             },
             "sprite":{
                 "add": "generation/layers/flak/accuracy.png",
@@ -201,7 +197,7 @@
             "modName": "Hull Module",
             "stats":{
                 "hullBust": "1",
-                "breachChance": "6"
+                "breachChance": "1"
             },
             "sprite":{
                 "add": "generation/layers/flak/hull.png"

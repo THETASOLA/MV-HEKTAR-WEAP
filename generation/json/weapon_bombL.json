@@ -81,17 +81,20 @@
         "title": "Modular Bomb",
         "tip": "tip_bombs",
         "desc": "Produced by Hektar Industries(TM), this is the base for a Modular Bomb. It supports 1 attribute module and 1 status module.\nIncompatible with the piercing module.",
+        "tooltip": "Bomb weapon; requires a missile. Can target your own ship.",
         "short": "M. Bomb",
+        "locked": "1",
         "damage": "0",
         "shots": "1",
-        "sysDamage": "4",
+        "sysDamage": "3",
+        "persDamage": "3",
         "sp": "0",
         "fireChance": "1",
         "breachChance": "1",
         "missiles": "1",
-        "cooldown": "15",
+        "cooldown": "17",
         "power": "2",
-        "cost": "65",
+        "cost": "70",
         "bp": "2",
         "rarity": "0",
         "image": "modular_bomb_base_base",
@@ -130,7 +133,7 @@
             "desc": "Status - Cooldown",
             "modName": "Cooldown Module",
             "stats":{
-                "cooldown": "12"
+                "cooldown": "13"
             },
             "sprite":{
                 "addmodule": "generation/layers/bomb/cooldown.png",
@@ -187,7 +190,7 @@
             "desc": "Attribute - Accuracy",
             "modName": "Accuracy Module",
             "stats":{
-                "accuracyMod": "20"
+                "accuracyMod": "100"
             },
             "sprite":{
                 "add": "generation/layers/bomb/accuracy.png"
@@ -215,7 +218,7 @@
             "modName": "Power Module",
             "stats":{
                 "power": "3",
-                "sysDamage": "10"
+                "sysDamage": "5"
             },
             "sprite":{
                 "add": "generation/layers/bomb/power.png"
