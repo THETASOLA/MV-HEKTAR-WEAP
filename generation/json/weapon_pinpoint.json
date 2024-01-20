@@ -37,7 +37,9 @@
         "short": "M. Pinpoint",
         "tooltip": "One damage per room beam weapon",
         "damage": "3",
+        "sysDamage": "0",
         "sp": "0",
+        "persDamage": "0",
         "fireChance": "0",
         "breachChance": "2",
         "cooldown": "16",
@@ -45,7 +47,7 @@
         "power": "2",
         "cost": "65",
         "bp": "2",
-        "rarity": "2",
+        "rarity": "0",
         "image": "beam_contact",
         "length": "1",
         "launchSounds": {
@@ -78,7 +80,7 @@
             "modName": "Anti-Bio Module",
             "bio": true,
             "stats":{
-                "persDamage": "6"
+                "persDamage": "4"
             },
             "sprite":{
                 "addmodule": "generation/layers/pinpoint/bio.png",

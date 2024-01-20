@@ -8,7 +8,9 @@ Incompatible with the accuracy and lockdown module.</desc>
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -16,7 +18,7 @@ Incompatible with the accuracy and lockdown module.</desc>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -39,15 +41,17 @@ Status - Pierce
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>1</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
+  <breachChance>3</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -70,7 +74,9 @@ Status - Bio
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>4</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -78,7 +84,7 @@ Status - Bio
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -115,7 +121,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_BASE_COOLDOWN">
@@ -131,15 +136,17 @@ Status - Cooldown
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
+  <cooldown>12</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -162,7 +169,9 @@ Status - Stun
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -170,7 +179,7 @@ Status - Stun
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -178,7 +187,7 @@ Status - Stun
   </launchSounds>
   <weaponArt>modular_focus_base_stun</weaponArt>
   <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <stun>22</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_FIRE">
@@ -194,15 +203,17 @@ Attribute - Fire
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
+  <persDamage>0</persDamage>
+  <fireChance>10</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -225,15 +236,17 @@ Attribute - Hull
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>4</damage>
+  <sysDamage>-1</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
+  <breachChance>10</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -257,7 +270,9 @@ Attribute - Power
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>5</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -265,7 +280,7 @@ Attribute - Power
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -289,15 +304,17 @@ Status - Pierce
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>1</sp>
-  <fireChance>5</fireChance>
-  <breachChance>2</breachChance>
+  <persDamage>0</persDamage>
+  <fireChance>10</fireChance>
+  <breachChance>3</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -321,15 +338,17 @@ Status - Bio
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
+  <persDamage>4</persDamage>
+  <fireChance>10</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -366,7 +385,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_FIRE_COOLDOWN">
@@ -383,15 +401,17 @@ Status - Cooldown
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
+  <persDamage>0</persDamage>
+  <fireChance>10</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
+  <cooldown>12</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -415,15 +435,17 @@ Status - Stun
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>3</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
-  <fireChance>5</fireChance>
+  <persDamage>0</persDamage>
+  <fireChance>10</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -431,7 +453,7 @@ Status - Stun
   </launchSounds>
   <weaponArt>modular_focus_fire_stun</weaponArt>
   <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <stun>22</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_HULL_PIERCE">
@@ -448,15 +470,17 @@ Status - Pierce
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>4</damage>
+  <sysDamage>-1</sysDamage>
   <sp>1</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
-  <breachChance>2</breachChance>
+  <breachChance>13</breachChance>
   <cooldown>16</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -481,7 +505,9 @@ Status - Bio
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>4</damage>
+  <sysDamage>-1</sysDamage>
   <sp>0</sp>
+  <persDamage>4</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -489,7 +515,7 @@ Status - Bio
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -527,7 +553,6 @@ Status - Bio
     </statBoost>
   </statBoosts>
   <hullBust>1</hullBust>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_HULL_COOLDOWN">
@@ -544,15 +569,17 @@ Status - Cooldown
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>4</damage>
+  <sysDamage>-1</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
+  <cooldown>12</cooldown>
   <speed>1</speed>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -577,7 +604,9 @@ Status - Stun
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>4</damage>
+  <sysDamage>-1</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -585,7 +614,7 @@ Status - Stun
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -594,7 +623,7 @@ Status - Stun
   <weaponArt>modular_focus_hull_stun</weaponArt>
   <iconImage>beam</iconImage>
   <hullBust>1</hullBust>
-  <stun>25</stun>
+  <stun>22</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_POWER_PIERCE">
@@ -611,7 +640,9 @@ Status - Pierce
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>5</damage>
+  <sysDamage>0</sysDamage>
   <sp>1</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -619,7 +650,7 @@ Status - Pierce
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -643,7 +674,9 @@ Status - Bio
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>5</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>4</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -651,7 +684,7 @@ Status - Bio
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -688,7 +721,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_FOCUS_POWER_COOLDOWN">
@@ -705,15 +737,17 @@ Status - Cooldown
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>5</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
-  <cooldown>8</cooldown>
+  <cooldown>12</cooldown>
   <speed>1</speed>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -737,7 +771,9 @@ Status - Stun
   <short>M. Pinpoint</short>
   <tooltip>One damage per room beam weapon</tooltip>
   <damage>5</damage>
+  <sysDamage>0</sysDamage>
   <sp>0</sp>
+  <persDamage>0</persDamage>
   <fireChance>0</fireChance>
   <breachChance>2</breachChance>
   <cooldown>16</cooldown>
@@ -745,7 +781,7 @@ Status - Stun
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
-  <rarity>2</rarity>
+  <rarity>0</rarity>
   <image>beam_contact</image>
   <length>1</length>
   <launchSounds>
@@ -753,7 +789,7 @@ Status - Stun
   </launchSounds>
   <weaponArt>modular_focus_power_stun</weaponArt>
   <iconImage>beam</iconImage>
-  <stun>25</stun>
+  <stun>22</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_BASE">
@@ -880,7 +916,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>4</persDamage>
+  <persDamage>2</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_BASE_PIERCE">
@@ -902,7 +938,7 @@ Status - Pierce
   <sp>1</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>1</breachChance>
+  <breachChance>3</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -953,7 +989,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>9</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -1082,7 +1118,7 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_base_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>14</stun>
+  <stun>12</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_FIRE">
@@ -1183,7 +1219,7 @@ Attribute - Accuracy
   </missSounds>
   <weaponArt>modular_shotgun_accuracy_base</weaponArt>
   <iconImage>flak</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>10</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL">
@@ -1205,7 +1241,7 @@ Attribute - Hull
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
+  <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1365,7 +1401,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>4</persDamage>
+  <persDamage>2</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_FIRE_PIERCE">
@@ -1388,7 +1424,7 @@ Status - Pierce
   <sp>1</sp>
   <spin>720</spin>
   <fireChance>4</fireChance>
-  <breachChance>1</breachChance>
+  <breachChance>3</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1440,7 +1476,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>4</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>9</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -1571,7 +1607,7 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_fire_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>14</stun>
+  <stun>12</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_BIO">
@@ -1652,8 +1688,8 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <accuracyMod>20</accuracyMod>
-  <persDamage>4</persDamage>
+  <accuracyMod>10</accuracyMod>
+  <persDamage>2</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_PIERCE">
@@ -1676,7 +1712,7 @@ Status - Pierce
   <sp>1</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>1</breachChance>
+  <breachChance>3</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1705,7 +1741,7 @@ Status - Pierce
   </missSounds>
   <weaponArt>modular_shotgun_accuracy_pierce</weaponArt>
   <iconImage>flak</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>10</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_COOLDOWN">
@@ -1729,7 +1765,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>9</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -1757,7 +1793,7 @@ Status - Cooldown
   </missSounds>
   <weaponArt>modular_shotgun_accuracy_cooldown</weaponArt>
   <iconImage>flak</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>10</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_ACCURACY_LOCKDOWN">
@@ -1809,7 +1845,7 @@ Status - Lockdown
   </missSounds>
   <weaponArt>modular_shotgun_accuracy_lockdown</weaponArt>
   <iconImage>flak</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>10</accuracyMod>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
@@ -1862,8 +1898,8 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_accuracy_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <accuracyMod>20</accuracyMod>
-  <stun>14</stun>
+  <accuracyMod>10</accuracyMod>
+  <stun>12</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_BIO">
@@ -1886,7 +1922,7 @@ Status - Bio
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
+  <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -1945,7 +1981,7 @@ Status - Bio
     </statBoost>
   </statBoosts>
   <hullBust>1</hullBust>
-  <persDamage>4</persDamage>
+  <persDamage>2</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_HULL_PIERCE">
@@ -1968,7 +2004,7 @@ Status - Pierce
   <sp>1</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
+  <breachChance>4</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -2020,8 +2056,8 @@ Status - Cooldown
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
-  <cooldown>10</cooldown>
+  <breachChance>1</breachChance>
+  <cooldown>9</cooldown>
   <power>2</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -2072,7 +2108,7 @@ Status - Lockdown
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
+  <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -2125,7 +2161,7 @@ Status - Stun
   <sp>0</sp>
   <spin>720</spin>
   <fireChance>0</fireChance>
-  <breachChance>6</breachChance>
+  <breachChance>1</breachChance>
   <cooldown>12</cooldown>
   <power>2</power>
   <cost>65</cost>
@@ -2155,7 +2191,7 @@ Status - Stun
   <weaponArt>modular_shotgun_hull_stun</weaponArt>
   <iconImage>flak</iconImage>
   <hullBust>1</hullBust>
-  <stun>14</stun>
+  <stun>12</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_POWER_BIO">
@@ -2236,7 +2272,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>4</persDamage>
+  <persDamage>2</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_SHOTGUN_POWER_PIERCE">
@@ -2311,7 +2347,7 @@ Status - Cooldown
   <spin>720</spin>
   <fireChance>0</fireChance>
   <breachChance>1</breachChance>
-  <cooldown>10</cooldown>
+  <cooldown>9</cooldown>
   <power>3</power>
   <cost>65</cost>
   <bp>2</bp>
@@ -2442,7 +2478,7 @@ Status - Stun
   </missSounds>
   <weaponArt>modular_shotgun_power_stun</weaponArt>
   <iconImage>flak</iconImage>
-  <stun>14</stun>
+  <stun>12</stun>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_BASE">
@@ -2451,17 +2487,20 @@ Status - Stun
   <tip>tip_bombs</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Bomb. It supports 1 attribute module and 1 status module.
 Incompatible with the piercing module.</desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_base_base</image>
@@ -2486,17 +2525,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Bio
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>6</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_base_bio</image>
@@ -2539,7 +2581,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_BASE_COOLDOWN">
@@ -2551,17 +2592,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Cooldown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>12</cooldown>
+  <cooldown>13</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_base_cooldown</image>
@@ -2586,17 +2630,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Lockdown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_base_lockdown</image>
@@ -2622,17 +2669,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Status - Stun
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
   <sysDamage>0</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_base_stun</image>
@@ -2659,17 +2709,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Fire
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_fire_base</image>
@@ -2694,17 +2747,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Accuracy
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_accuracy_base</image>
@@ -2718,7 +2774,7 @@ Attribute - Accuracy
   </hitShipSounds>
   <weaponArt>modular_bomb_launcher_accuracy_base</weaponArt>
   <iconImage>bomb</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>100</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_HULL">
@@ -2730,17 +2786,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Hull
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>1</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>10</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_hull_base</image>
@@ -2765,17 +2824,20 @@ Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
 Attribute - Power
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>10</sysDamage>
+  <sysDamage>5</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>3</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_power_base</image>
@@ -2801,17 +2863,20 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Bio
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>6</persDamage>
   <sp>0</sp>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_fire_bio</image>
@@ -2854,7 +2919,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_FIRE_COOLDOWN">
@@ -2867,17 +2931,20 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Cooldown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>12</cooldown>
+  <cooldown>13</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_fire_cooldown</image>
@@ -2903,17 +2970,20 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Lockdown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_fire_lockdown</image>
@@ -2940,17 +3010,20 @@ Has no incompatible modules.
 Attribute - Fire
 Status - Stun
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
   <sysDamage>0</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>10</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_fire_stun</image>
@@ -2978,17 +3051,20 @@ Has no incompatible modules.
 Attribute - Accuracy
 Status - Bio
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>6</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_accuracy_bio</image>
@@ -3031,8 +3107,7 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <accuracyMod>20</accuracyMod>
-  <persDamage>6</persDamage>
+  <accuracyMod>100</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_ACCURACY_COOLDOWN">
@@ -3045,17 +3120,20 @@ Has no incompatible modules.
 Attribute - Accuracy
 Status - Cooldown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>12</cooldown>
+  <cooldown>13</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_accuracy_cooldown</image>
@@ -3069,7 +3147,7 @@ Status - Cooldown
   </hitShipSounds>
   <weaponArt>modular_bomb_launcher_accuracy_cooldown</weaponArt>
   <iconImage>bomb</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>100</accuracyMod>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_ACCURACY_LOCKDOWN">
@@ -3082,17 +3160,20 @@ Has no incompatible modules.
 Attribute - Accuracy
 Status - Lockdown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_accuracy_lockdown</image>
@@ -3106,7 +3187,7 @@ Status - Lockdown
   </hitShipSounds>
   <weaponArt>modular_bomb_launcher_accuracy_lockdown</weaponArt>
   <iconImage>bomb</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>100</accuracyMod>
   <lockdown>1</lockdown>
 </weaponBlueprint>
 
@@ -3120,17 +3201,20 @@ Has no incompatible modules.
 Attribute - Accuracy
 Status - Stun
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
   <sysDamage>0</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_accuracy_stun</image>
@@ -3144,7 +3228,7 @@ Status - Stun
   </hitShipSounds>
   <weaponArt>modular_bomb_launcher_accuracy_stun</weaponArt>
   <iconImage>bomb</iconImage>
-  <accuracyMod>20</accuracyMod>
+  <accuracyMod>100</accuracyMod>
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
@@ -3159,17 +3243,20 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Bio
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>1</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>6</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>10</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_hull_bio</image>
@@ -3212,7 +3299,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_HULL_COOLDOWN">
@@ -3225,17 +3311,20 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Cooldown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>1</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>10</breachChance>
   <missiles>1</missiles>
-  <cooldown>12</cooldown>
+  <cooldown>13</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_hull_cooldown</image>
@@ -3261,17 +3350,20 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Lockdown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>1</damage>
   <shots>1</shots>
-  <sysDamage>4</sysDamage>
+  <sysDamage>3</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>10</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_hull_lockdown</image>
@@ -3298,17 +3390,20 @@ Has no incompatible modules.
 Attribute - Hull
 Status - Stun
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>1</damage>
   <shots>1</shots>
   <sysDamage>0</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>10</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>2</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_hull_stun</image>
@@ -3336,17 +3431,20 @@ Has no incompatible modules.
 Attribute - Power
 Status - Bio
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>10</sysDamage>
+  <sysDamage>5</sysDamage>
+  <persDamage>6</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>3</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_power_bio</image>
@@ -3389,7 +3487,6 @@ Status - Bio
       <duration>10</duration>
     </statBoost>
   </statBoosts>
-  <persDamage>6</persDamage>
 </weaponBlueprint>
 
 <weaponBlueprint name="MODULAR_BOMB_POWER_COOLDOWN">
@@ -3402,17 +3499,20 @@ Has no incompatible modules.
 Attribute - Power
 Status - Cooldown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>10</sysDamage>
+  <sysDamage>5</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>12</cooldown>
+  <cooldown>13</cooldown>
   <power>3</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_power_cooldown</image>
@@ -3438,17 +3538,20 @@ Has no incompatible modules.
 Attribute - Power
 Status - Lockdown
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>10</sysDamage>
+  <sysDamage>5</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>3</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_power_lockdown</image>
@@ -3475,17 +3578,20 @@ Has no incompatible modules.
 Attribute - Power
 Status - Stun
 </desc>
+  <tooltip>Bomb weapon; requires a missile. Can target your own ship.</tooltip>
   <short>M. Bomb</short>
+  <locked>1</locked>
   <damage>0</damage>
   <shots>1</shots>
-  <sysDamage>6</sysDamage>
+  <sysDamage>2</sysDamage>
+  <persDamage>3</persDamage>
   <sp>0</sp>
   <fireChance>1</fireChance>
   <breachChance>1</breachChance>
   <missiles>1</missiles>
-  <cooldown>15</cooldown>
+  <cooldown>17</cooldown>
   <power>3</power>
-  <cost>65</cost>
+  <cost>70</cost>
   <bp>2</bp>
   <rarity>0</rarity>
   <image>modular_bomb_power_stun</image>
@@ -3502,4 +3608,3 @@ Status - Stun
   <stun>20</stun>
   <ion>6</ion>
 </weaponBlueprint>
-

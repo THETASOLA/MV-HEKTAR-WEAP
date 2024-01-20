@@ -332,17 +332,17 @@ if __name__ == "__main__":
     animation_xml = [""]
     animation_xml[0] = "<FTL>"
 
-    #with open('generation/json/weapon_pinpoint.json') as json_file:
-    #    data = json.load(json_file)
-    #generate(data, animation_xml)
-#
-    #with open('generation/json/weapon_bomb.json') as json_file:
-    #    data = json.load(json_file)
-    #generate(data, animation_xml)
-#
-    #with open('generation/json/weapon_bombL.json') as json_file:
-    #    data = json.load(json_file)
-    #generate(data, animation_xml)
+    with open('generation/json/weapon_pinpoint.json') as json_file:
+        data = json.load(json_file)
+    generate(data, animation_xml)
+
+    with open('generation/json/weapon_bomb.json') as json_file:
+        data = json.load(json_file)
+    generate(data, animation_xml)
+
+    with open('generation/json/weapon_bombL.json') as json_file:
+        data = json.load(json_file)
+    generate(data, animation_xml)
 
     with open('generation/json/weapon_flak.json') as json_file:
         data = json.load(json_file)

@@ -18,8 +18,8 @@ additional_data = """
 	Laser Effects: 0 hull/system dmg, +30 crew damage, +1 shield pierce
 	Beam Effects: 0 hull dmg (system dmg is preserved), +60 crew damage, +1 shield pierce
 	Missile Effects: 0 hull/system dmg, +90 crew damage
-	Ion Effects: +60 crew damage (must be a direct hit)
-    Pinpoint/Bomb Effects: +90 crew damage
+	Pinpoint/Ion Effects: +60 crew damage (must be a direct hit)
+    Bomb Effects: +90 crew damage
     Flak Effects: +30 crew damage
 	Weapons also gain standard Anti-Bio crew debuffs. (66% slowed speed and repairs, 75% increased stun duration)</mod-append:desc>
 </mod:findName>
