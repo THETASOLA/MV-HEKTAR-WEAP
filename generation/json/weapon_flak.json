@@ -200,7 +200,8 @@
                 "breachChance": "1"
             },
             "sprite":{
-                "add": "generation/layers/flak/hull.png"
+                "add": "generation/layers/flak/hull.png",
+                "addglow": [[1,2,3,4,5], "generation/layers/flak/hullGlow.png"]
             }
         },
 
