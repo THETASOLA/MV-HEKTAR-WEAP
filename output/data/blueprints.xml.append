@@ -796,7 +796,7 @@ Status - Stun
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Flak. It supports 1 attribute module and 1 status module.
 Has no incompatibilities.</desc>
   <short>M. Flak</short>
@@ -843,7 +843,7 @@ Has no incompatibilities.</desc>
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -923,7 +923,7 @@ Status - Bio
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -973,7 +973,7 @@ Status - Pierce
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1023,7 +1023,7 @@ Status - Cooldown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1074,7 +1074,7 @@ Status - Lockdown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1125,7 +1125,7 @@ Status - Stun
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1175,7 +1175,7 @@ Attribute - Fire
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1226,7 +1226,7 @@ Attribute - Accuracy
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1277,7 +1277,7 @@ Attribute - Hull
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1327,7 +1327,7 @@ Attribute - Power
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1408,7 +1408,7 @@ Status - Bio
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1459,7 +1459,7 @@ Status - Pierce
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1510,7 +1510,7 @@ Status - Cooldown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1562,7 +1562,7 @@ Status - Lockdown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1614,7 +1614,7 @@ Status - Stun
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1696,7 +1696,7 @@ Status - Bio
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1748,7 +1748,7 @@ Status - Pierce
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1800,7 +1800,7 @@ Status - Cooldown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1853,7 +1853,7 @@ Status - Lockdown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1906,7 +1906,7 @@ Status - Stun
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -1988,7 +1988,7 @@ Status - Bio
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2040,7 +2040,7 @@ Status - Pierce
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2092,7 +2092,7 @@ Status - Cooldown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2145,7 +2145,7 @@ Status - Lockdown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2198,7 +2198,7 @@ Status - Stun
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2279,7 +2279,7 @@ Status - Bio
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2330,7 +2330,7 @@ Status - Pierce
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2381,7 +2381,7 @@ Status - Cooldown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
@@ -2433,7 +2433,7 @@ Status - Lockdown
   <flavorType>Physical Projectile Blast</flavorType>
   <type>BURST</type>
   <title>Modular Flak</title>
-  <tip>tip_flaks</tip>
+  <tip>tip_flak</tip>
   <desc>Produced by Hektar Industries(TM), this is the base for a Modular Laser. It supports 1 attribute module and 1 status module.
 Has no incompatible modules.
 ----CURRENTLY INSTALLED MODULES----
