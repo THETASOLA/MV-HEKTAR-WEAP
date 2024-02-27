@@ -142,7 +142,7 @@ def delete_below_pixels(base_image, layer_image, movData=None, position=None):
                         posX -= set[1][0]
                         posY -= set[1][1]
 
-            if base_image.getpixel((x, y))[3] != 0:
+            if base_image.getpixel((x, y))[3] != 0 and posX < width and posY < height and posX >= 0 and posY >= 0:
                 layer_image.putpixel((posX, posY), (0, 0, 0, 0))
 
 def add_layers_with_positions(data, base_image, layer_path, positions, separation_width, layer_config, percentage=None):
@@ -294,7 +294,7 @@ animation_data = {
     'flak': generate_animation_data_flak
 }
 
-def generate(data, animation_xml):
+def generate(data, animation_xml=None):
     
     sprite_data = data['spriteData']
     sprite_base = sprite_data['base']
@@ -314,7 +314,8 @@ def generate(data, animation_xml):
             copy_image = base_image.copy()
             
             handle_layer_addition(copy_image, data, separation_width, modules_data['main'][main_module], modules_data['second'][second_module])
-            animation_xml[0] = animation_data[sprite_data['animation']](animation_xml[0], f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
+            if animation_xml:
+                animation_xml[0] = animation_data[sprite_data['animation']](animation_xml[0], f"{modules_data['main'][main_module]['name']}_{modules_data['second'][second_module]['name']}")
 
             if 'tpfrom' in sprite_data:
                 teleportation_effect(copy_image, separation_width, sprite_data['tpfrom'])
@@ -332,21 +333,25 @@ if __name__ == "__main__":
     animation_xml = [""]
     animation_xml[0] = "<FTL>"
 
-    with open('generation/json/weapon_pinpoint.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
+    #with open('generation/json/weapon_pinpoint.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+#
+    #with open('generation/json/weapon_bomb.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+#
+    #with open('generation/json/weapon_bombL.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
+#
+    #with open('generation/json/weapon_flak.json') as json_file:
+    #    data = json.load(json_file)
+    #generate(data, animation_xml)
 
-    with open('generation/json/weapon_bomb.json') as json_file:
+    with open('generation/json/weapon_laser.json') as json_file:
         data = json.load(json_file)
-    generate(data, animation_xml)
-
-    with open('generation/json/weapon_bombL.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
-
-    with open('generation/json/weapon_flak.json') as json_file:
-        data = json.load(json_file)
-    generate(data, animation_xml)
+    generate(data)
     
     with open("output/data/animations.xml.append", "w") as xml_file:
         xml_file.write(animation_xml[0] + "</FTL>")
